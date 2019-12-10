@@ -1,0 +1,2456 @@
+<!-- Converted by db4-upgrade version 1.0 -->
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="chapter-11" label="11"><title>The Organizing System Roadmap</title>
+    <info>
+        <author><personname><firstname>Robert</firstname><othername>J.</othername><surname>Glushko</surname></personname></author>
+    </info>
+    
+    <!--              -->
+    <section xml:id="section-11.1" label="11.1"><title>Introduction</title>
+        <info><itermset><indexterm zone="section-11.1">
+                <primary>organizing system</primary>
+                <secondary>roadmap</secondary>
+            </indexterm></itermset>
+        </info>
+        
+        <note userlevel="Editor" xml:id="note-ch10-Editor-isf_ybs_lr">
+            <title>Editors' Note</title>
+            <para xml:id="para-ish_54r_lr">With 9 and 10, I think an emphasis on the <quote>how to
+                    think about/address/confront challenges in organization in novel terms</quote>
+                (the aforementioned 9.5.2, 10.5.2) is important. More?</para>
+            <para xml:id="para-awh_54r_lr">And I think 10 could use an extended conclusion. This is
+                your opportunity to deliver a polemic, expound a philosophy, incite
+                revolution!</para>
+            <para>More on infrastructure, inertia, more STO stuff.</para>
+        </note>
+        
+        <sidebar xml:id="ch10-stats" userlevel="Editor" condition="epub3 print" role="statistics">
+            <?dbhtml sidebar-width="60%"?>
+            <?dbhtml float-type="right"?>
+            <?dbfo sidebar-width="60%"?>
+            <?dbfo float-type="inside"?>
+            <informalfigure xml:id="inf-fig-ch10-stats">
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Visualisations/ch10-stats.png" format="JPG"/>
+                    </imageobject>
+                    <textobject>
+                        <phrase role="ALT descriptive">This graphic describes the content breakdown
+                            of the chapter. A wheel with colored segments depicts core content
+                            versus disciplinary content in this chapter, and a bar chart illustrates
+                            the disciplinary content distribution. In this chapter, Business notes
+                            predominate, then Computing, then LIS, and some Museums. There are no
+                            Archives, CogSci, IA, Law, Linguistics, Philosophy, or Web notes in this
+                            chapter.</phrase>
+                    </textobject>
+                </mediaobject>
+            </informalfigure>
+        </sidebar>
+        
+        <para audience="CORE" xml:id="para-gzh_54r_lr"><info>
+                <itermset>
+                    <indexterm zone="para-gzh_54r_lr">
+                        <primary>tradeoffs</primary>
+                        <secondary>what, why, when, by whom</secondary>
+                    </indexterm>
+                </itermset>
+            </info><xref linkend="chapter-1" xrefstyle="short"/> defined an organizing system as
+                <quote>an intentionally arranged collection of resources and the interactions they
+                support.</quote> An organizing system emerges as the result of decisions about
+                <emphasis role="bold">what</emphasis> is organized, <emphasis role="bold"
+                >why</emphasis> it is organized, <emphasis role="bold">how much</emphasis> it is
+            organized, <emphasis role="bold">when</emphasis> it is organized, and <emphasis
+                role="bold">how or by whom</emphasis> it is organized. These decisions and the
+            tradeoffs they embody are manifested in the four common activities of organizing
+                systems<symbol>&#8212;</symbol>selecting resources, organizing them, designing and
+            supporting interactions with them, and maintaining them<symbol>&#8212;</symbol>which we
+            described in Chapter 2. Chapters 4-10 progressively explained each of the parts of the
+            organizing system: resources, resource descriptions, resource categories and
+            collections, and interactions with resources<symbol>&#8212;</symbol>introducing
+            additional concepts and methods associated with each of these parts.</para>
+        <note userlevel="Editor">
+            <para xml:id="para-hwz_jvg_hv">Chapter 11 on the lifecycle and especially 11.6,
+                Operating and Maintaining an Organizing System does a decent job but we need to get
+                more of it into 2. 10 also takes an institutional perspective; maybe 2 can do more
+                of it from an individual one. </para>
+            <para xml:id="para-sgz_nvg_hv">11.5.2 architectural thinking should be revisited in the
+                light of "need to be ready to learn"</para>
+        </note>
+        <para audience="CORE" xml:id="para-bd3_54r_lr">Along the way we described many types of
+            organizing systems. Sometimes we discussed broad categories of organizing systems, like
+            those for libraries, museums, business information systems, and compositions of
+            web-based services. At other times we described specific instances of organizing
+            systems, like those in the <application>Seed Library</application>, the
+                <application>Flickr photo sharing site</application>, <orgname>Amazon’s drop
+                shipment store</orgname>, and your home kitchen or closet.</para>
+        <para audience="CORE" xml:id="para-oh3_54r_lr">We can now build on the foundation created by
+            Chapters 1-10 to create a <quote>roadmap</quote> that organizes and summarizes the
+            design issues and choices that emerge during an organizing system’s lifecycle. These
+            design choices follow patterns that help us understand existing organizing systems
+            better, while also suggesting how to invent new ones by making a different set of design
+            choices.</para>
+        <para audience="CORE" xml:id="para-fm3_54r_lr"><phrase role="parenthetical">The roadmap is
+                extensively annotated with references to the preceding chapters where the issues and
+                choices mentioned in the roadmap were introduced and discussed in detail.
+            </phrase>We will use this roadmap to analyze a variety of case study examples in <xref
+                linkend="chapter-12" xrefstyle="short"/>, and to explore the <quote>design
+                neighborhood</quote> around each of them. The design questions from <xref
+                linkend="chapter-1" xrefstyle="short"/> serve as a template to give each case study
+            the same structure, which we hope enables instructors, students, and others who read
+            this book to add to this collection of case studies by contributing their own at <link
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="http://DisciplineOfOrganizing.org"
+                ><uri>DisciplineOfOrganizing.org</uri></link>.</para>
+        <important role="editorial" xml:id="nav-ch10">
+            <title>Navigating This Chapter</title>
+            <para xml:id="para-vq3_54r_lr">We begin with a look at <xref linkend="section-11.2"/>
+                which proposes four phases, each of which is discussed in its own section. The first
+                phase, which largely determines the extent and complexity of the resource
+                descriptions needed for organizing and interactions, is  <xref
+                    linkend="section-11.3"/>. The second phase, which is highly shaped by economic
+                factors and technology constraints or choices, is <xref linkend="section-11.4"/>.
+                    <xref linkend="section-11.5"/>, emphasizes the need for clearly separating
+                requirements from implementation, a principle we call architectural thinking. The
+                final phase is discussed in <xref linkend="section-11.6"/>, where we distinguish the
+                maintenance of specific resources and descriptions from the maintenance of the
+                system as a whole. </para>
+        </important>
+    </section>
+    <!--              -->
+    <?dbfo clear ?>
+    <?need 7.5cm ?>
+    
+    <section xml:id="section-11.2" label="11.2"><title>The Organizing System Lifecycle</title>
+        <info><itermset><indexterm zone="section-11.2">
+                <primary>organizing system</primary>
+                <secondary>lifecycle</secondary>
+            </indexterm></itermset>
+        </info>
+        
+        
+        <para audience="CORE" xml:id="para-lw3_54r_lr">System lifecycle models exhibit great
+            variety; for our purposes it suffices to use a generic four-phase model that
+            distinguishes a domain definition and scoping phase, a requirements phase, a design and
+            implementation phase, and an operational and maintenance phase. These phases are brief
+            and mostly inseparable for some simple organizing systems, more sequential for others,
+            and more systematic and iterative for complex organizing systems.</para>
+        <para audience="CORE" xml:id="para-t1j_54r_lr" revision="3.0" revisionflag="changed">Most of
+            the specific decisions that must be made for an organizing system are strongly shaped by
+            the initial decisions about its domain, scope (the breadth or variety of the resources),
+            and scale (the number of resource instances). In organizing systems with limited scope
+            and scale, most of these decisions are made in an informal, unanalyzed, and holistic
+            manner. For example, when we arrange our bookshelves or closets it is not necessary to
+            think explicitly about scoping, requirements, design, implementation, and operational
+            phases. For complex organizing systems, however, especially those in
+            information-intensive domains, it is important to follow a more systematic
+            methodology.</para>
+        <para xml:id="para-ffj_54r_lr" audience="CORE" revision="3.0" revisionflag="added">Initial
+            decisions about scope and requirements can create lasting technology and process
+            legacies that impact operational efficiency and flexibility. They can also have profound
+            and unforeseen ramifications for the users of the system and other people affected by
+            the work the system enables. A rigorous, well-documented planning process can help
+            organizers minimize unfair and ineffective outcomes, justify their difficult tradeoffs
+            and decisions, and figure out what went wrong so they can learn from their
+            mistakes.</para>
+        <para revision="3.0" revisionflag="added">The consequences of releasing technical systems
+            and tools into the world always include social, business, political, and legal
+            dimensions in addition to technical ones. Some of these implications are due to the
+            context in which the system will operate <phrase role="parenthetical">(<xref
+                    linkend="section-10.4"/>)</phrase>. Others are due to the fact that the work of
+            organizing system designers, architects, and developers is shaped by their experiences,
+            values, beliefs, and circumstances—the often hidden constraints and influences of their
+            social position, education, cultural context, and mental models of the world.
+            Inevitably, the work of information professionals involves <quote>carving up the world
+                at its joints,</quote> creating classifications, models, and architectures that
+            support interactions with resources. In practice this often translates to creating
+            artificial <quote>joints</quote> where none truly exist, which will always favor some
+            and injure others. No modeling is ever completely faithful to reality for all people
+            with all experiences (nor is it intended to be), so those people not considered target
+            users for a system, or who have unique circumstances, may end up feeling slighted or
+            ignored and may actually suffer as a result.</para>
+    </section>
+    <!--              -->
+    <?dbfo clear ?>
+    <?need 7.5cm ?>
+    
+    <section xml:id="section-11.3" label="11.3"><title>Defining and Scoping the Organizing System Domain</title>
+        <info><itermset><indexterm zone="section-11.3">
+                <primary>organizing system</primary>
+                <secondary>domain</secondary>
+                <tertiary>defining and scoping</tertiary>
+            </indexterm></itermset>
+        </info>
+        
+        
+        <para audience="CORE" xml:id="para-yjj_54r_lr"><phrase role="statement">The most fundamental
+                decision for an organizing system is defining its <glossterm linkend="gloss_domain"
+                    >domain</glossterm>, the set or type of resources that are being
+                organized.</phrase> This is why <quote>What is Being Organized?</quote>
+            <phrase role="parenthetical">(<xref linkend="section-2n.2" xrefstyle="short"
+                />)</phrase> was the first of the design decisions we introduced in <xref
+                linkend="chapter-1" xrefstyle="short"/>.</para>
+        <para audience="CORE" xml:id="para-z4j_54r_lr">We refine how we think about an organizing
+            system domain by breaking it down into five interrelated aspects: <orderedlist>
+                <listitem>
+                    <para xml:id="para-ctj_54r_lr">the scope and scale of the collection</para>
+                </listitem>
+                <listitem>
+                    <para xml:id="para-qwj_54r_lr">the number and nature of users</para>
+                </listitem>
+                <listitem>
+                    <para xml:id="para-d1k_54r_lr">the time span or lifetime over which the
+                        organizing system will operate</para>
+                </listitem>
+                <listitem>
+                    <para xml:id="para-pdk_54r_lr">the physical or technological environment in
+                        which the organizing system is situated</para>
+                </listitem>
+                <listitem>
+                    <para xml:id="para-bhk_54r_lr">the relationship of the organizing system to
+                        other ones that overlap with it in domain or scope</para>
+                </listitem>
+            </orderedlist>
+            <phrase>Addressing these issues is a prerequisite for prioritizing requirements for the
+                organizing system, proposing the principles of its design, and implementing the
+                organizing system.</phrase></para>
+        <!--              -->
+        <section xml:id="section-11.3.1" label="11.3.1"><title>Scope and Scale of the Collection</title>
+            <info><itermset><indexterm zone="section-11.3.1">
+                    <primary>collection</primary>
+                    <secondary>scope and scale</secondary>
+                </indexterm><indexterm zone="section-11.3.1">
+                    <primary>scope</primary>
+                    <secondary>of collection</secondary>
+                </indexterm><indexterm zone="section-11.3.1">
+                    <primary>scale</primary>
+                    <secondary>of collection</secondary>
+                </indexterm></itermset>
+        </info>
+            
+            
+            <para audience="CORE" xml:id="para-alk_54r_lr"><phrase role="principle statement">The
+                        <glossterm linkend="gloss_scope">scope</glossterm> of a collection is the
+                    dominant factor in the design of an organizing system, because it largely
+                    determines the extent and complexity of the resource descriptions needed by
+                    organizing principles and interactions<phrase role="parenthetical"> (<xref
+                            linkend="section-5.3.1.3" xrefstyle="short"/>)</phrase>. The impact of
+                    broad scope arises more from the heterogeneity of the resources in a collection
+                    than its absolute scale.</phrase>
+                <phrase role="principle statement">It takes more effort to manage a broad and large
+                    collection than a narrow and small one; it takes less effort to manage a large
+                    collection if it has a narrow scope.</phrase> A cattle ranch can get by with
+                just one worker for every thousand cows, unlike zoos, which typically have a small
+                number of instances of many types of animals. A zoo needs many more workers because
+                each animal type and sometimes even individual animals can have distinct
+                requirements for their arrangement and care.</para>
+            <para audience="CORE" xml:id="para-gqk_54r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-gqk_54r_lr">
+                            <primary>data science</primary>
+                            <secondary>in resource description</secondary>
+                        </indexterm>
+                        
+                    </itermset>
+                </info>Consider a business information system being designed to contain millions of
+                highly structured and similar instances of a small number of related resource types,
+                such as purchase orders and their corresponding invoices.<footnote
+                    xml:id="endnote-543" label="623" audience="Computing">
+                    <para audience="Computing" xml:id="para-u5k_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-543">
+                                    <primary>endnote</primary>
+                                    <secondary>Computing</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-543">
+                                    <primary>computing</primary>
+                                    <secondary>transactional document</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>For some kinds of resources with highly regular structure, the
+                        distinction between the resource and its description is a bit arbitrary. A
+                        transactional document like a payment contains at its core a specification
+                        of the amount paid, which we could consider the payment resource.
+                        Information about the payer, the payee, the reason for the payment, and
+                        other essential information might be viewed as descriptions of the payment
+                        resource. In a payment or financial management system, the entire document
+                        might be treated as the resource.</para>
+                </footnote> The analysis to determine the appropriate properties and principles for
+                resource description and organization is straightforward, and any order or invoice
+                is an equally good instance to study.<footnote xml:id="endnote-544" label="624"
+                    audience="Computing">
+                    <para audience="Computing" xml:id="para-nzk_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-544">
+                                    <primary>endnote</primary>
+                                    <secondary>Computing</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-544">
+                                    <primary>model-driven</primary>
+                                    <secondary>architectures</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-544">
+                                    <primary>computing</primary>
+                                    <secondary>model-driven architecture</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>The results of this analysis can be represented in a conceptual model
+                        or document /database schema that can guide the automated creation of the
+                        resource instances and their descriptions<phrase role="parenthetical">
+                                (<xref linkend="section-5.3.1.2" xrefstyle="short"/>)</phrase>.
+                        Furthermore, these models or schemas can also be used in
+                            <quote>model-based</quote> or <quote>model-driven</quote> architectures
+                        to generate much of the software that implements the functionality to store
+                        the instances and interchange them with other information systems;
+                            <quote>imagine if the construction worker could take his blueprint,
+                            crank it through a machine, and have the foundation for the building
+                            simply appear.</quote> Quote comes from <citation
+                            xml:id="cite_Miller2003" linkend="Miller2003">(Miller and Mukerji
+                            2003)</citation>. See also <citation xml:id="cite_Kleppe2003"
+                            linkend="Kleppe2003">(Kleppe, Warmer, and Bast 2003)</citation>.</para>
+                </footnote></para>
+           
+            <para audience="CORE" role="contrast" xml:id="para-b2l_54r_lr">Contrast this large but
+                very narrow collection with a small but very broad one that contains a thousand
+                highly variable instances of dozens of different resource types. This heterogeneity
+                makes it difficult to determine if an instance is representative of its resource
+                type, and every resource might need to be analyzed. This variability implies a large
+                and diverse set of resource descriptions where individual resource instances might
+                not be described with much precision because it costs too much to do it
+                    manually<phrase role="parenthetical"> (<xref linkend="section-5.3.6.1"
+                        xrefstyle="short"/>)</phrase>. We can extrapolate to understand why
+                organizing systems whose resource collections are both broad and deep, like those of
+                    <application>Amazon</application> or <application>eBay</application>, have come
+                to rely on machine learning techniques to identify description properties and
+                construct resource taxonomies<phrase role="parenthetical"> (<xref
+                        linkend="section-5.3.6.4" xrefstyle="short"/>, <xref
+                        linkend="section-7.5.3.3" xrefstyle="short"/>)</phrase>.<footnote
+                    xml:id="endnote-545" label="625" audience="Computing">
+                    <para audience="Computing" xml:id="para-ljl_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-545">
+                                    <primary>endnote</primary>
+                                    <secondary>Computing</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-545" userlevel="Professional">
+                                    <primary>computing</primary>
+                                    <secondary>citations</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>See <citation xml:id="cite_Chen2010" linkend="Chen2010">(Chen, Li,
+                            Liang, and Zhang 2010)</citation>, <citation xml:id="cite_Pohs2013"
+                            linkend="Pohs2013">(Pohs 2013)</citation>.</para>
+                </footnote></para>
+            <para audience="CORE" role="contrast" xml:id="para-znl_54r_lr"><info><itermset>
+                <indexterm zone="para-znl_54r_lr">
+                    <primary>abstraction</primary>
+                    <secondary>level</secondary>
+                </indexterm><indexterm zone="para-znl_54r_lr">
+                <primary>costs</primary>
+                <secondary>imprecision</secondary>
+            </indexterm></itermset>
+        </info>A partial remedy or compromise when the resource instances are highly
+                dissimilar is to define resource types more broadly or abstractly, reducing the
+                overall number of types. We illustrated this approach in <xref
+                    linkend="section-8.2.2.1" xrefstyle="short"/> when we contrasted how kitchen
+                goods might be categorized broadly in a department store but much more precisely in
+                a wholesale kitchen supply store. The broader categories in the department store blur many of the
+                differences between instances, but in doing so yield a small set of common
+                properties that can be used to describe them. Because these common properties will
+                be at a higher level of abstraction, using them to describe resources will require
+                less expertise and probably less effort<phrase role="parenthetical"> (<xref
+                        linkend="section-5.3.1.3" xrefstyle="short"/>, <xref linkend="section-7.4.1"
+                        xrefstyle="short"/>)</phrase>. However, this comes at a cost: <phrase
+                    role="statement">Poets, painters, composers, sculptors, technical writers, and
+                    programmers all create resources, but describing all of them with a
+                        <quote>creator</quote> property, as the <glossterm linkend="gloss_DC">Dublin
+                        Core</glossterm> requires, loses a great deal of precision.</phrase>
+            </para>
+            <para audience="CORE" xml:id="para-ksl_54r_lr"><info><itermset>
+                <indexterm zone="para-ksl_54r_lr">
+                    <primary>constraints</primary>
+                    <secondary>environment</secondary>
+                </indexterm></itermset>
+        </info><phrase role="statement">Challenges caused by the scale of a collection
+                    are often related to constraints imposed by the physical or technological
+                    environment in which the collection exists that limit how large the collection
+                    can be or how it can be organized.</phrase>
+                <phrase role="parenthetical">(See <xref linkend="section-3.3.1" xrefstyle="short"
+                    />)</phrase> Only a few dozen books can fit on a small bookshelf but thousands
+                of books can fit in your two-car garage, which is a typical size because most people
+                and families do not have more than two cars. On the other hand, if you are a
+                Hollywood mogul, superstar athlete, or sultan with a collection of hundreds of cars,
+                a two-car garage is orders of magnitudes too small to store your
+                    collection.<footnote xml:id="endnote-546" label="626" audience="Business">
+                    <para audience="Business" xml:id="para-xwl_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-546">
+                                    <primary>endnote</primary>
+                                    <secondary>Business</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-546">
+                                    <primary>business</primary>
+                                    <secondary>auto collectors</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>See <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="http://autos.ca.msn.com/editors-picks/the-worlds-biggest-car-collectors"
+                                ><uri>http://autos.ca.msn.com/editors-picks/the-worlds-biggest-car-collectors</uri></link>.</para>
+                </footnote>
+                <phrase role="statement">Even collections of digital things can be limited in size
+                    by their technological environment, which you might have discovered when you ran
+                    out of space for your songs and photos on your portable media
+                player.</phrase></para>
+            <para audience="CORE" xml:id="para-hbm_54r_lr">Estimating the ultimate size of a
+                collection at the beginning of an organizing system’s lifecycle can reduce scaling
+                issues related to storage space for the resources or for their descriptions. Other
+                problems of scale are more fundamental. Larger collections need more people to
+                organize and maintain them, creating communication and coordination problems that
+                grow much faster than the collection, especially when the collection is distributed
+                in different locations.</para>
+            <para audience="CORE" xml:id="para-fgm_54r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-fgm_54r_lr">
+                            <primary>standardization</primary>
+                        </indexterm>
+                    </itermset>
+                </info><phrase role="statement">The best way to prevent problems of scope and scale
+                    is through standardization.</phrase> Standardization of resources can take place
+                if they are created by automated means so that every instance conforms to a schema
+                or model<phrase role="parenthetical"> (<xref linkend="section-7.5.2"
+                        xrefstyle="short"/>)</phrase>.<footnote xml:id="endnote-547" label="627"
+                    audience="Computing">
+                    <para audience="Computing" xml:id="para-zkm_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-547">
+                                    <primary>endnote</primary>
+                                    <secondary>Computing</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-547">
+                                    <primary>model-driven</primary>
+                                    <secondary>software generation</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-547">
+                                    <primary>computing</primary>
+                                    <secondary>software generation</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>Model-driven software generation can be simple—an XFORM specification
+                        that creates an input form on a web page. Or it can be complex—a detailed
+                        architectural specification in UML sufficient to generate a complete
+                        application.</para>
+                </footnote>
+                <phrase role="statement">Standards for describing bibliographic resources enable
+                    libraries to centralize and share much resource description, and using the same
+                    standards for resources of diverse types helps address the challenge of broad
+                    scope by reducing the need for close monitoring and coordination.</phrase>
+                Analogous standards for describing information resources, services, or economic
+                activities business, governmental, or scientific information systems to
+                systematically manage hundreds of millions or even billions of transactional records
+                or pieces of data<phrase role="parenthetical"> (<xref linkend="section-5.3.1.3"
+                        xrefstyle="short"/>)</phrase>.</para>
+        </section>
+        <!--              -->
+        <section xml:id="section-11.3.2" label="11.3.2"><title>Number and Nature of Users</title>
+            <info><itermset><indexterm zone="section-11.3.2">
+                    <primary>users</primary>
+                    <secondary>number and nature of</secondary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-q4m_54r_lr"><phrase role="statement">An organizing
+                    system might have only one user, as when an individual creates and operates an
+                    organizing system for a clothes closet, a home bookcase or file cabinet, or for
+                    digital files and applications on a personal computer or smart phone.</phrase>
+                Collections of personal resources are often organized for highly individualized
+                interactions using <foreignphrase>ad hoc</foreignphrase> categories that are hard to
+                understand for any other user<phrase role="parenthetical"> (<xref
+                        linkend="section-7.2.2" xrefstyle="short"/>)</phrase>. Personal collections
+                or collections used by only a small number of people typically contain resources
+                that they themselves selected, which makes the most typical interaction with the
+                organizing system searching for a familiar known resource<phrase
+                    role="parenthetical"> (<xref linkend="section-10.2.1" xrefstyle="short"
+                    />)</phrase>.</para>
+            <note userlevel="Editor" xml:id="note-ch10-Editor-kyf_ybs_lr">
+                <title>Editors' Note</title>
+                <para xml:id="para-nsm_54r_lr">Bob, Isabelle suggests: </para>
+                <para xml:id="para-cwm_54r_lr"><info><itermset>
+                    <indexterm audience="Markup" zone="note-ch10-Editor-kyf_ybs_lr"><primary>endnote</primary><secondary>IA</secondary></indexterm>
+</itermset></info>Stuff on the user. Case ? Literacy level ? ...
+                </para>
+            </note>
+            <para audience="CORE" role="contrast" xml:id="para-g1n_54r_lr">At the other extreme, an
+                organizing system can have national or even global scope and have millions or more
+                users like the Library of Congress classification system, the United Nations
+                Standard Products and Services Code, or the Internet Domain Name System. These
+                organizing systems employ systems of institutional categories <phrase
+                    role="parenthetical">(<xref linkend="section-7.2.3" xrefstyle="short"
+                    />)</phrase> that are designed to support systematically specified and
+                purposeful interactions, often to search for previously unknown resources. In
+                between these extremes are the many kinds of organizing systems created by informal
+                and formal groups, by firms of every size, and by sets of cooperating enterprises
+                like those that carry out supply chains and other information-intensive business
+                processes.</para>
+            <para audience="CORE" xml:id="para-q2n_54r_lr"><phrase role="statement">The nature and
+                    number of users strongly shapes the contents of an organizing system and the
+                    interactions it must be designed to support.</phrase>
+                <phrase role="parenthetical">(See <xref xrefstyle="short" linkend="section-10.2.1"
+                    />)</phrase> Some generic categories of users that apply in many domains are
+                customers, clients, visitors, operators, and managers. We can adapt the generic
+                interactions supported by most organizing systems <phrase role="parenthetical"
+                        >(<xref xrefstyle="short" linkend="section-5.3.2"/>)</phrase> to satisfy
+                these generic user types. For example, while most organizing systems allow any type
+                of user to browse or search the collection to discover its content, only operators
+                or managers are likely to have access to information about the browsing and
+                searching activities of customers, clients, or visitors.</para>
+            <para audience="CORE" xml:id="para-x3n_54r_lr">Once we have identified the organizing
+                system’s domain more precisely we can refine these generic user categories,
+                classifying users and interactions with more precision. For example, the customers
+                of university libraries are mostly professors and students, while the customers of
+                online stores are mostly shoppers seeking to find something to purchase. Library
+                customers borrow and return resources, often according to different policies for
+                professors and students, whereas online stores might only allow resources to be
+                returned for refunds or exchanges under limited circumstances.</para>
+            <para audience="CORE" role="contrast" xml:id="para-mnn_54r_lr"><phrase role="statement"
+                    >Just as it is with collection scope, the heterogeneity of the user base is more
+                    critical than its absolute size.</phrase> An airport bookstore typically has a
+                narrowly focused collection and treats its customers as generic travelers browsing
+                imprecisely for something to fill their time in the terminal or on the airplane. In
+                contrast, the local public library will have a much broader collection because it
+                has to meet the needs of a more diverse user base than the airport bookstore, and it
+                will support a range of interactions and services targeted to children learning to
+                read, school students, local businesses, retirees, and other categories of users. A
+                company library will focus its collection on its industry segment, making it
+                narrower in coverage than a local or university research library, but it might
+                provide specialized services for marketing, engineering, research, legal, or other
+                departments of the firm.</para>
+            
+            <para audience="CORE" role="contrast" xml:id="para-xrn_54r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-xrn_54r_lr" userlevel="Professional Graduate">
+                            <primary>Centers for Disease Control</primary>
+                        </indexterm>
+                        <indexterm zone="para-xrn_54r_lr">
+                            <primary>WebMD</primary>
+                        </indexterm>
+                    </itermset>
+                </info><phrase role="statement">Each category of users, and indeed each individual
+                    user, brings different experiences, goals, and biases into interactions with the
+                    organizing system. As a result, organizing systems in the same domain and with
+                    nominally the same scope can differ substantially in the resources they contain
+                    and the interactions they support for different categories of users.</phrase>
+                The library for the <orgname>Centers for Disease Control</orgname> and the
+                    <application>WebMD</application> website both contain information about diseases
+                and symptoms, but the former is primarily organized to support research in public
+                health and the latter is organized for consumers trying to figure out why they are
+                sick and how to get well. These contrasting purposes and targeted users are
+                manifested in different classification systems and descriptive
+                    vocabularies.<footnote xml:id="endnote-548" label="628" audience="LIS">
+                    <para audience="LIS" xml:id="para-fwn_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-548">
+                                    <primary>endnote</primary>
+                                    <secondary>LIS</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-548">
+                                    <primary>library science</primary>
+                                    <secondary>CDC</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-548">
+                                    <primary>library science</primary>
+                                    <secondary>WebMD</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>Compare <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="http://www.cdc.gov/philc">www.cdc.gov/philc</link> and <link
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="http://www.webmd.com">www.webmd.com</link>.</para>
+                </footnote></para>
+            <para revision="3.0" revisionflag="added">The designers of these systems do not
+                necessarily share the same biases as their users, and more importantly, they may not
+                always understand them completely or correctly. This is precisely why good design is
+                iterative: successive cycles of evaluation and revision can shape crude,
+                provisional, and misguided ideas into wildly successful ones. But such nimbleness is
+                not always feasible in highly complex, political, or bureaucratic institutional
+                contexts. Even then, as Bowker and Star conclude, transparency is the best
+                corrective for these sorts of design failures. Designers who recognize that their
+                systems have real consequences for real people should commit to an ongoing process
+                of negotiation that enables those affected by the technology to voice and push back
+                against any detrimental effect it might have on them and their communities. This
+                helps set the stage for effective operation and maintenance of the system <phrase
+                    role="parenthetical">(<xref linkend="section-11.6.2" xrefstyle="short"
+                    />).</phrase></para>
+              
+        </section>
+        <!--              -->
+        <section xml:id="section-11.3.3" label="11.3.3"><title>Expected Lifetime</title>
+            <info><itermset><indexterm zone="section-11.3.3">
+                    <primary>resource</primary>
+                    <secondary>expected lifetime</secondary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-p14_54r_lr"><phrase role="statement">The scope and
+                    scale of a collection and the size of its user population are often correlated
+                    with the expected lifetime of its organizing system.</phrase> Because small
+                personal organizing systems are often created in response to a specific situation or
+                to accomplish a specific task, they generally have short lifetimes<phrase
+                    role="parenthetical"> (<xref xrefstyle="short" linkend="section-7.2.2"
+                    />)</phrase>.</para>
+            <para audience="CORE" xml:id="para-vf4_54r_lr"><phrase role="statement">The expected
+                    lifetime of the organizing system is not the same as the expected lifetime of
+                    the resources it contains because motivations for maintaining resources differ a
+                    great deal.</phrase>
+                <phrase role="parenthetical">(See <xref xrefstyle="short" linkend="section-3.5.1"
+                    />)</phrase> As we have just noted, some organizing systems created by
+                individuals are tied to specific short-term tasks, and when the task is completed or
+                changes, the organizing system is no longer needed or must be superseded by a new
+                one. At the other extreme are libraries, museums, archives, and other memory
+                institutions designed to last indefinitely because they exist to preserve valuable
+                and often irreplaceable resources.</para>
+            <para audience="CORE" role="contrast" xml:id="para-yk4_54r_lr">However, most business
+                organizing systems contain relatively short-lived resources that arise from and
+                support day-to-day operations, in which case the organizing system has a long
+                expected lifetime with impermanent resources. Finally, just to complete our 2 x 2
+                matrix, the auction catalog that organizes valuable paintings or other collectibles
+                is a short-lived single-purpose organizing system whose contents are descriptions of
+                resources with long expected lifetimes.</para>
+        </section>
+        <!--              -->
+        <section xml:id="section-11.3.4" label="11.3.4"><title>Physical or Technological Environment</title>
+            <info><itermset><indexterm zone="section-11.3.4">
+                    <primary>environment</primary>
+                </indexterm><indexterm zone="section-11.3.4">
+                    <primary>physical environment</primary>
+                </indexterm><indexterm zone="section-11.3.4">
+                    <primary>technological environment</primary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-lp4_54r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-lp4_54r_lr">
+                            <primary>constraints</primary>
+                            <secondary>environment</secondary>
+                        </indexterm>
+                    </itermset>
+                </info><phrase role="statement">An organizing system is often tied to a particular
+                    physical or technological environment.</phrase> A kitchen, closet, card cabinet,
+                airplane cockpit, handheld computer or smartphone, and any other physical
+                environment in which resources are organized provides affordances to be taken
+                advantage of and constraints that must be accommodated by an organizing
+                    system<phrase role="parenthetical"> (<xref linkend="section-3.4.1"
+                        xrefstyle="short"/>)</phrase>.<footnote xml:id="endnote-549" label="629"
+                    audience="Business">
+                    <para audience="Business" xml:id="para-f54_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-549">
+                                    <primary>endnote</primary>
+                                    <secondary>Business</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-549">
+                                    <primary>business</primary>
+                                    <secondary>built environment</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-549">
+                                    <primary>built environment</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-549">
+                                    <primary>queue</primary>
+                                    <secondary>configuration</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>Service design, architecture, and user interaction design are the
+                        primary disciplines that care about the influence of layout and spatial
+                        arrangement on user interaction behavior and satisfaction. One type of
+                        physical framework is the <quote>Servicescape</quote>
+                        <citation xml:id="cite_Bitner1992" linkend="Bitner1992">(Bitner
+                            1992)</citation>, the man-made physical context in which services are
+                        delivered. For example, the arrangement of waiting lines in banks,
+                        supermarkets, and post offices or the use of centrally-visible <quote>take a
+                            number</quote> systems strongly influence the encounters in service
+                        systems <citation xml:id="cite_Zhou2003" linkend="Zhou2003">(Zhou and Soman
+                            2003)</citation>. Related concepts for describing the use of features
+                        and orienting mechanisms in <quote>the built environment</quote> come from
+                        the <quote>Wayfinding</quote>
+                        <citation xml:id="cite_Arthur1992-11.3.4" linkend="Arthur1992">(Arthur and
+                            Passini 1992)</citation> literature in urban planning and
+                        architecture.</para>
+                </footnote></para>
+            <para audience="CORE" xml:id="para-e3p_54r_lr"><info><itermset>
+                <indexterm zone="para-e3p_54r_lr">
+                    <primary>constraints</primary>
+                    <secondary>environment</secondary>
+                </indexterm></itermset>
+        </info><phrase role="statement">The extent of these physical and technological
+                    constraints affects the lifetime of an organizing system because they make it
+                    more difficult to adapt to changes in the set of resources being organized or
+                    the reasons for their organization.</phrase> A desk or cabinet with fixed
+                    <quote>pigeon holes</quote> or drawers affords less flexible organization than a
+                file cabinet or open shelves. A building with hard-walled offices constrains how
+                people interact and collaborate more than an open floor plan with modular cubicles
+                does. Business processes implemented in a monolithic enterprise software application
+                are tightly coupled; those implemented as a choreography of loosely-coupled web
+                services can often transparently substitute one service provider for another.</para>
+        </section>
+        <!--              -->
+        <?dbfo clear ?>
+        <?need 6cm ?>
+        <section xml:id="section-11.3.5" label="11.3.5"><title>Relationship to Other Organizing Systems</title>
+            <info><itermset><indexterm zone="section-11.3.5">
+                    <primary>relationship</primary>
+                    <secondary>to other organizing systems</secondary>
+                </indexterm><indexterm zone="section-11.3.5">
+                    <primary>DDC</primary>
+                </indexterm><indexterm zone="section-11.3.5">
+                    <primary>LCC</primary>
+                </indexterm><indexterm zone="section-11.3.5">
+                    <primary>BISAC</primary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-pmp_54r_lr"><phrase role="statement">The same domain
+                    or set of resources can have more than one organizing system, and one organizing
+                    system can contain multiple others.</phrase> The organizing system for books in
+                a library arranges books about cooking according to the Library of Congress or Dewey
+                Decimal classifications and bookstores use the <abbrev>BISAC</abbrev> ones, mostly
+                using cuisine as the primary factor<phrase role="parenthetical"> (<xref
+                        xrefstyle="short" linkend="section-8.3"/>)</phrase>. In turn, cookbooks
+                employ an organizing system for their recipes that arranges them by type of dish,
+                main ingredient, or method of preparation. Within a cookbook, recipes might follow
+                an organizing system that standardizes the order of their component parts like the
+                description, ingredients, and preparation steps.</para>
+            <para audience="CORE" xml:id="para-mrp_54r_lr"><info><itermset>
+                <indexterm zone="para-mrp_54r_lr">
+                    <primary>abstraction</primary>
+                    <secondary>level</secondary>
+                </indexterm></itermset>
+        </info>Sometimes these multiple organizing systems can be designed in
+                coordination so they can function as a single hierarchical, or nested, organizing
+                system in which it is possible to emphasize different levels depending on the user’s
+                task or application. Most books and many documents have an internal structure with
+                chapters and hierarchical headings that enable readers to understand smaller units
+                of content in the context of larger ones<phrase role="parenthetical"> (<xref
+                        xrefstyle="short" linkend="section-6.5.2"/>)</phrase>. Similarly, a
+                collection of songs can be treated as an album and organized using that level of
+                abstraction for the item, but each of those songs can also be treated as the unit of
+                organization, especially when they are embodied in separate digital files.</para>
+            <para audience="CORE" xml:id="para-ewp_54r_lr"><info><itermset>
+                <indexterm zone="para-ewp_54r_lr">
+                    <primary>CRM</primary>
+                </indexterm><indexterm zone="para-ewp_54r_lr">
+                    <primary>ERP</primary>
+               </indexterm></itermset>
+        </info><phrase role="statement">Organizing systems overlap and intersect. 
+                People and enterprises routinely interact with
+                many different organizing systems because what they do requires them to use
+                resources in ways that cut across context, device, or application boundaries.
+                Just consider how many different organizing systems we use as individuals for
+                managing personal information like contacts, appointments, and
+                messages.</phrase>
+                As company employees we create and organize information in email,
+                document repositories, spreadsheets, and <abbrev>CRM</abbrev> and
+                    <abbrev>ERP</abbrev> systems. Now consider this at an institutional scale in the
+                inter-enterprise interactions among the organizing systems of physicians, hospitals,
+                medical labs, insurance companies, government agencies, and other parties involved
+                in healthcare. Consider how many of these are <quote>mash-ups</quote> and composite services that combine information and resources from independently designed systems. </para>
+            <para audience="CORE" xml:id="para-y1q_54r_lr"><phrase role="statement">We have come to
+                    expect that the boundaries between organizing systems are often arbitrary and
+                    that we should be able to merge or combine them when that would create
+                    additional value. It is surely impossible to anticipate all of these
+                        <foreignphrase>ad hoc</foreignphrase> or dynamic intersections of organizing
+                    systems, but it is surely necessary to recognize their inevitability, especially
+                    when the organizing systems contain digital information and are implemented
+                    using web architectures.</phrase></para>
+        </section>
+        
+        <!-- ###################### SECTION ########################################### -->
+    </section>
+    <!--              -->
+    <?dbfo clear ?>
+    <?need 7.5cm ?>
+    
+    <section xml:id="section-11.4" label="11.4"><title>Identifying Requirements for an Organizing System</title>
+        <info><itermset><indexterm zone="section-11.4">
+                <primary>organizing system</primary>
+                <secondary>requirements</secondary>
+                <tertiary>identifying</tertiary>
+            </indexterm></itermset>
+        </info>
+        
+        <para audience="CORE" xml:id="para-bcr_54r_lr"><phrase role="statement">The two parts of the
+                definition of an organizing system explicitly suggest two categories of
+                requirements, those that specify the intentional arrangement of the resources and
+                those that specify the interactions with the resources.</phrase> These categories of
+            requirements both depend on resource descriptions, which are implied by but not
+            explicitly called out in the definition of an organizing system.</para>
+        <para audience="CORE" xml:id="para-dhr_54r_lr"><phrase role="statement">Because description,
+                arrangement, and interaction are interrelated it is impossible to describe them
+                separately without some redundancy.</phrase> Nevertheless, in this book we have done
+            that on purpose because taking different perspectives on organizing systems in Chapters
+            2-10 has enabled us to introduce a broad range of concepts, issues, and methods:</para>
+        <itemizedlist>
+            <listitem>
+                <para audience="CORE" xml:id="para-mlr_54r_lr"><phrase role="statement">Every
+                        organizing system must enable users to interact with its collection of
+                        resources (Chapters 3 and 10);</phrase></para>
+            </listitem>
+            <listitem>
+                <para audience="CORE" xml:id="para-aqr_54r_lr"><phrase role="statement">The possible
+                        interactions depend primarily on the nature and extent of the descriptions
+                        associated with the resources (Chapters 4, 5 and 6);</phrase></para>
+            </listitem>
+            <listitem>
+                <para audience="CORE" xml:id="para-m5r_54r_lr"><phrase role="principle statement"
+                        >Intentional arrangement emerges when one or more resource descriptions are
+                        used by organizing principles (Chapters 7 and 8);</phrase></para>
+            </listitem>
+            <listitem>
+                <para audience="CORE" xml:id="para-zyr_54r_lr"><phrase role="principle statement"
+                        >Different implementations of the same organizing principle can determine
+                        the efficiency or effectiveness of the interactions it enables.</phrase>
+                    <phrase role="parenthetical">(Chapter 10).</phrase></para>
+            </listitem>
+        </itemizedlist>
+        <para audience="CORE" xml:id="para-jds_54r_lr"><info>
+                <itermset>
+                    <indexterm zone="para-jds_54r_lr">
+                        <primary>traceability</primary>
+                    </indexterm>
+                    <indexterm zone="para-jds_54r_lr">
+                        <primary>interactions</primary>
+                        <secondary>traceability</secondary>
+                    </indexterm>
+                    <indexterm zone="para-jds_54r_lr">
+                        <primary>feature traceability</primary>
+                    </indexterm>
+                    <indexterm zone="para-jds_54r_lr">
+                        <primary>requirements</primary>
+                        <secondary>traceability</secondary>
+                    </indexterm>
+                </itermset>
+            </info>If you are creating a personal organizing system or otherwise small-scale one
+            with only a small number of users, you might think there is little reason to think
+            explicitly about requirements. However, any project benefits from the discipline of
+            being more systematic about its purposes and their priorities. In addition, being
+            explicit about requirements enables traceability and impact analysis. <phrase
+                role="statement">Traceability means being able to relate an interaction or feature
+                of a system to the requirement it satisfies; impact analysis runs the causal link
+                between requirements and features in the opposite direction to assess what or who
+                will be affected if requirements change.</phrase><footnote xml:id="endnote-550"
+                label="630" audience="Business">
+                <para audience="Business" xml:id="para-rhs_54r_lr"><info>
+                        <itermset>
+                            <indexterm audience="Markup" zone="endnote-550">
+                                <primary>endnote</primary>
+                                <secondary>Business</secondary>
+                            </indexterm>
+                            <indexterm zone="endnote-550">
+                                <primary>business</primary>
+                                <secondary>traceability</secondary>
+                            </indexterm>
+                            <indexterm zone="endnote-550">
+                                <primary>traceability</primary>
+                            </indexterm>
+                        </itermset>
+                    </info>An easy to remember framework for prioritizing requirements is MoSCoW,
+                    which classifies them as Must, Should, Could, and Won’t <citation
+                        xml:id="cite_Desoky2010" linkend="Desoky2010">(Desoky 2010)</citation>.
+                        <citation xml:id="cite_Winkler2010" linkend="Winkler2010">(Winkler and
+                        Pilgrim 2010)</citation> is a comprehensive review of academic research and
+                    best practices for requirements traceability.</para>
+            </footnote></para>
+        <!--              -->
+        <section xml:id="section-11.4.1" label="11.4.1"><title>Requirements for Interactions</title>
+            <info><itermset><indexterm zone="section-11.4.1">
+                    <primary>organizing system</primary>
+                    <secondary>requirements</secondary>
+                    <tertiary>for interactions</tertiary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-ems_54r_lr">When we describe interactions in a
+                generic or broad way as we did in <xref linkend="chapter-3"/> we see that all
+                organizing systems have some common interactions, but most of the time we want to
+                pay attention to the more specific interactions that are designed to create value in
+                a particular organizing system because of the kind of resources it contains<phrase
+                    role="parenthetical"> (<xref xrefstyle="short" linkend="section-3.4.2"
+                    />)</phrase>. <phrase role="statement">The domain, scope, and scale of the
+                    organizing system determines which interactions are possible and which ones must
+                    be explicitly supported, but the priorities of different interactions are more
+                    often determined by decisions about intended users.</phrase>
+                <phrase role="parenthetical">(See <xref xrefstyle="short" linkend="section-11.3.2"
+                    />.)</phrase></para>
+            <para audience="CORE" xml:id="para-irs_54r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-irs_54r_lr">
+                            <primary>business</primary>
+                            <secondary>interactions</secondary>
+                        </indexterm>
+                        <indexterm zone="para-irs_54r_lr">
+                            <primary>constraints</primary>
+                            <secondary>funding</secondary>
+                        </indexterm>
+                    </itermset>
+                </info><phrase role="statement">For most organizing systems other than personal
+                    ones, the set of interactions that are implemented in an organizing system is
+                    strongly determined by business model considerations, funding levels, or other
+                    economic factors.</phrase> For-profit firms often differentiate themselves by
+                the number and quality of the interactions they support with their resources, some
+                by supporting many of them and some by supporting a minimal number. This
+                differentiation is strongly shaped by and also shapes user preferences; some people
+                prefer self-service or unmediated interactions, while others prefer full service and
+                mediated interactions.<footnote xml:id="endnote-551" label="631" audience="Business">
+                    <para audience="Business" xml:id="para-aws_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-551">
+                                    <primary>endnote</primary>
+                                    <secondary>Business</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-551">
+                                    <primary>customer segments</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-551">
+                                    <primary>business</primary>
+                                    <secondary>customer segments</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info><quote>Customer segments</quote> or <quote>customer models</quote>
+                        are well-established constructs in product and service marketing and
+                        operations <citation xml:id="cite_Batt2000" linkend="Batt2000">(Batt
+                            2000)</citation>
+                        <citation xml:id="cite_Zeithami2001" linkend="Zeithami2001">(Zeithami, Rust,
+                            and Lemon 2001)</citation>. They are key parts of strategies for
+                        acquiring customers, increasing market share, and retaining customers.
+                        Customer segments can be identified using numerous overlapping criteria,
+                        including demographic variables, product or behavior choices, and preferred
+                        interaction locations or channels. For example, an airline might segment its
+                        customers according to their age, gender, home airport, ticketing class, and
+                        travel frequency.</para>
+                </footnote>
+                <phrase role="statement">Non-profit institutions like public libraries and museums
+                    are also subject to these constraints, but unfortunately they have fewer options
+                    for adjusting service levels or changing their targeted user populations when
+                    their funding is reduced.</phrase><footnote xml:id="endnote-552" label="632"
+                    audience="LIS">
+                    <para audience="LIS" xml:id="para-k1t_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-552">
+                                    <primary>endnote</primary>
+                                    <secondary>LIS</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-552">
+                                    <primary>funding cuts</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-552">
+                                    <primary>library science</primary>
+                                    <secondary>funding</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>Funding cuts for public libraries lead to reduced staffing, reduced
+                        hours, and reduced acquisitions and many of them serve populations facing
+                        economic challenges of their own. <citation xml:id="cite_Johnson2010"
+                            linkend="Johnson2010">(Johnson 2010)</citation>.</para>
+                </footnote></para>
+            <para audience="CORE" xml:id="para-s2t_54r_lr">Some requirements for interactions come
+                along with technology requirements, to have resources in a particular format, to
+                conform to a particular specification or standard in order to operate in some
+                technology environment, or to interoperate with other parties or their organizing
+                systems.</para>
+            <para audience="CORE" xml:id="para-bjt_54r_lr"><info><itermset>
+                <indexterm zone="para-bjt_54r_lr">
+                    <primary>user interface</primary>
+                    <secondary>designing interactions</secondary>
+                </indexterm><indexterm zone="para-bjt_54r_lr">
+                    <primary>interactions</primary>
+                    <secondary>and user interface design</secondary>
+                </indexterm></itermset>
+        </info><phrase role="statement">An essential requirement in every organizing
+                    system is ensuring that the supported interactions can be discovered and invoked
+                    by their intended users.</phrase> In organizing systems with physical resources,
+                good designers enhance the inherent affordances of resources with navigation and
+                orientation aids that direct users to points of interactions<phrase
+                    role="parenthetical"> (<xref linkend="section-3.4.1" xrefstyle="short"
+                    />)</phrase>. With digital resources and information-intensive organizing
+                systems, interactions are not immediately perceivable, and poor design can create
+                overly complicated user interfaces in which many interactions are never discovered
+                and thus never used.</para>
+            <para audience="CORE" xml:id="para-jnt_54r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-jnt_54r_lr">
+                            <primary>location</primary>
+                            <secondary>smartphone applications</secondary>
+                        </indexterm>
+                    </itermset>
+                </info><phrase role="statement">It is tricky to compare the overall capabilities of
+                    organizing systems in terms of the number or variety of their interactions
+                    because what matters more is how much value they create.</phrase> Organizing
+                systems with active resources can create value on their own without an explicit user
+                    interaction<phrase role="parenthetical"> (<xref linkend="section-4.2.3.2"
+                        xrefstyle="short"/>)</phrase>. Other organizing systems exploit stored,
+                computed, or <glossterm linkend="gloss_contextual_properties">contextual
+                    information</glossterm> to create value by eliminating the need for user
+                interactions, such as location-based smartphone apps that push information to you
+                when you are near some particular location or some person you know<phrase
+                    role="parenthetical"> (<xref linkend="section-3.4.1" xrefstyle="short"
+                    />)</phrase>.<footnote xml:id="endnote-553" label="633" audience="Business">
+                    <para audience="Business" xml:id="para-zrt_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-553">
+                                    <primary>endnote</primary>
+                                    <secondary>Business</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-553">
+                                    <primary>activity records</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-553">
+                                    <primary>business</primary>
+                                    <secondary>activity records</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>Organizing systems differ in the extent they can initiate
+                        interactions or use information to make them unnecessary. In libraries the
+                        organizing systems are typically designed not to preserve user activity
+                        records longer than absolutely necessary; in commercial organizing systems,
+                        user activity records are the basis of business processes that create highly
+                        detailed user models (called <quote>microsegments</quote> or
+                            <quote>microcategories</quote>) that enable personalized product and
+                        service offerings See <citation xml:id="cite_Taylor2007"
+                            linkend="Taylor2007">(Taylor and Raden 2007)</citation>, <citation
+                            xml:id="cite_Rosen2012" linkend="Rosen2012">(Rosen
+                        2012)</citation>.</para>
+                </footnote></para>
+        
+        </section>
+        <!--              -->
+        <section xml:id="section-11.4.2" label="11.4.2"><title>About the Nature and Extent of Resource Description</title>
+            <info><itermset><indexterm zone="section-11.4.2">
+                    <primary>resource description</primary>
+                    <secondary>requirements</secondary>
+                    <tertiary>nature and extent</tertiary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-kwt_54r_lr"><phrase role="statement">Interactions
+                    with resources within an organizing system often depend on descriptions of
+                    individual resources or descriptions of the collections that contain
+                    them.</phrase> In the bibliographic domain, generic or common interactions make
+                use of descriptions that can be associated with almost any type of resource, such as
+                the name, creator, and creation date.<footnote xml:id="endnote-554" label="634"
+                    audience="LIS">
+                    <para audience="LIS" xml:id="para-x15_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-554">
+                                    <primary>endnote</primary>
+                                    <secondary>LIS</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-554">
+                                    <primary>library science</primary>
+                                    <secondary>DC</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>The Dublin Core was proposed in <date>1995</date> as a small
+                        vocabulary with 15 common elements that could be broadly applied. The
+                        emergence of many specialized derivatives of the Dublin Core since then
+                        illustrates the inherent tension between the simplicity of using a small set
+                        of common descriptive elements and the precision enabled by a large or more
+                        domain specific vocabulary.</para>
+                </footnote></para>
+            <para xml:id="para-Ch10-ordering"><info><itermset>
+                <indexterm zone="para-Ch10-ordering">
+                    <primary>alphabetical ordering</primary>
+                </indexterm><indexterm zone="para-Ch10-ordering">
+                    <primary>chronological ordering</primary>
+                </indexterm></itermset>
+        </info>For example, any resource with a sortable name or identifier can be
+                arranged alphabetically to enable it to be easily found, and any resource with a
+                creation date can be discovered by a <quote>what’s new</quote> query to a resource
+                collection.</para>
+            <para audience="CORE" xml:id="para-hf5_54r_lr"><info><itermset>
+                <indexterm zone="para-hf5_54r_lr">
+                     <primary>ISBN</primary>
+                </indexterm><indexterm zone="para-hf5_54r_lr">
+                     <primary>tradeoffs</primary>
+                     <secondary>imposed by extent and timing</secondary>
+                 </indexterm></itermset>
+        </info><phrase role="statement">Different types
+                of resources must have differentiating properties, otherwise there would be no
+                reason to distinguish them as different types.</phrase> These resource
+                properties can be recorded in the terms of a description language to support one or
+                more interactions or to answer one or more questions. Simply put, choices about the
+                nature and extent of resource description depend on which interactions or questions
+                are most frequent or important<phrase role="parenthetical"> (<xref xrefstyle="short"
+                        linkend="section-5.3.1.1"/>)</phrase>. <phrase role="statement">If a
+                    particular property of a resource has no interactions that depend on it, there
+                    is no need to describe it. However, if an interaction depends on a description
+                    of a particular resource property, a missing description or one of inadequate
+                    precision and granularity means that the interaction will be impossible or
+                    inefficient to carry out because the resource will need to be further analyzed
+                    to create or extract the required description.</phrase>
+                <phrase role="statement">An <abbrev>ISBN</abbrev> is a sufficient
+                    description to find a book in a directory, but if the <abbrev>ISBN</abbrev> is
+                    the only description associated with the book you will not be able to tell who
+                    wrote it.</phrase>
+                 The tradeoffs imposed by the extent and timing of resource description
+                have been a recurring theme in this book, with the tradeoff between recall and
+                precision being the most salient<phrase role="parenthetical"> (<xref
+                        xrefstyle="short" linkend="section-2n.5"/>, <xref xrefstyle="short"
+                        linkend="section-3.4.1"/>, <xref xrefstyle="short" linkend="section-7.4.1"
+                    />, <xref linkend="section-7.4.3" xrefstyle="short"/>)</phrase>.</para>
+            <para audience="CORE" xml:id="para-vj5_54r_lr"><phrase role="statement">The properties
+                    of resources that are easiest to describe are not always the most useful ones,
+                    especially for information resources. Anyone can determine the number of pages
+                    in a book, but often only a skilled cataloger can accurately describe what the
+                    book is about, a far more important property. </phrase>
+                <phrase role="parenthetical">(<xref linkend="section-5.2.2"/> and <xref
+                        linkend="section-7.3.4"/>)</phrase> For non-text information resources this
+                problem is magnified because the content is often in a semantically opaque format
+                that it optimized for the devices that creates and processes it but which cannot
+                usefully be analyzed by people. <phrase role="parenthetical">(<xref
+                        linkend="section-4.4.2.5"/> and <xref linkend="section-5.4"/>)</phrase>
+            </para>
+            <para audience="CORE" role="contrast" xml:id="para-i45_54r_lr"><phrase role="statement"
+                    >Business strategy and economics strongly influence the extent of resource
+                    description.</phrase> In many museums and archives there are not enough trained
+                people and time to describe every pottery fragment or document, and many resources
+                are described only at an aggregate level. In contrast, some people argue that the
+                explosion of content in physical and digital form mandates significant investment in
+                descriptions that facilitate resource discovery in a crowded marketplace.<footnote
+                    xml:id="endnote-555" label="635" audience="LIS">
+                    <para audience="LIS" xml:id="para-rs5_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-555">
+                                    <primary>endnote</primary>
+                                    <secondary>LIS</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-555" userlevel="Professional">
+                                    <primary>library science</primary>
+                                    <secondary>citations</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info><citation xml:id="cite_Register2012" linkend="Register2012">(Register
+                            and McIlroy 2012)</citation>
+                        <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="http://themetadatahandbook.com/"
+                                ><uri>http://themetadatahandbook.com/</uri></link>.</para>
+                </footnote></para>
+            <para audience="CORE" xml:id="para-ax5_54r_lr"><info><itermset>
+                <indexterm zone="para-ax5_54r_lr">
+                    <primary>location</primary>
+                    <secondary>smartphone applications</secondary>
+                </indexterm></itermset>
+        </info><phrase role="statement">Automated and computerized processes can create
+                    the resource descriptions in an organizing system and their use is primarily
+                    driven by scale<phrase role="parenthetical"> (<xref linkend="section-5.3.6.4"
+                            xrefstyle="short"/>).</phrase></phrase> Search engines index web pages
+                and analyze their link structures because it would be impossible to treat the web as
+                a traditional library and organize it by human effort. The benefits of digital
+                cameras, video recorders, and similar devices would be far fewer if people had to
+                manually identify and describe each resource when creating it. Instead, these
+                devices can automatically assign some contextual metadata. Similarly, competitive
+                pressures on vendors to provide real-time and context-sensitive information services
+                mandate automated collection of contextual information like location from mobile
+                phones, portable book readers and tablet computers.</para>
+
+            <sidebar xml:id="sidebar-ColorCodedLibrary"><title>Color Coded Library</title>
+                <info>
+                    <itermset>
+                        <indexterm zone="sidebar-ColorCodedLibrary" condition="print"
+                            userlevel="Professional Graduate">
+                            <primary>sidebar</primary>
+                            <secondary>Color Coded Library</secondary>
+                        </indexterm>
+                        <indexterm zone="sidebar-ColorCodedLibrary" userlevel="Professional Graduate">
+                            <primary>Color Coded Library</primary>
+                        </indexterm>
+                        <indexterm zone="sidebar-ColorCodedLibrary">
+                            <primary>library</primary>
+                        </indexterm>
+                    </itermset>
+                </info>
+                
+                <?dbhtml sidebar-width="50%"?>
+                <?dbhtml float-type="right"?>
+                
+                <informalfigure xml:id="PICTURE-ColorCodedLibrary" xreflabel="Color Coded Library">
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="Pictures/10.4.2-ColorCodedLibrary-OK.jpg" format="JPG"/>
+                        </imageobject>
+                        <textobject>
+                            <phrase role="ALT descriptive">Books, arranged by color, on shelves.</phrase>
+                        </textobject>
+                        <caption><para audience="CORE" xml:id="para-mbv_54r_lr"><phrase role="caption">Because he is presumably
+                                    familiar with the contents of all of his books, interaction
+                                    designer Juhan Sonin organized his library according to their
+                                    spine colors. This organizing principle is a highly individual
+                                    and aesthetic one, but it would probably not appeal to people
+                                    unfamiliar with the collection and would bring chaos to a
+                                    library of larger size.</phrase></para>
+                            <para audience="CORE" xml:id="para-bgv_54r_lr"><phrase role="credit"
+                                        >(<link xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xlink:href="http://www.flickr.com/photos/seeminglee/4556156477"
+                                        >Photo by See-ming Lee.</link> Creative Commons CC-BY-SA-2.0
+                                    license.)</phrase></para></caption>
+                    </mediaobject>
+                </informalfigure>
+
+            </sidebar>
+
+            <para audience="CORE" xml:id="para-kkv_54r_lr">We might seek some optimal degree of
+                description given some set of requirements or purposes for an organizing system and
+                some estimate of the organizing effort that could be applied; in practice this is
+                elusive for two reasons, both relating to scope and scale. First, as the number of
+                users of an organizing system increases, it becomes more difficult to identify and
+                anticipate all its possible purposes and constraints it must satisfy. Even if most
+                users share the goals for the organizing system, any particular user might have some
+                additional specialized use for some attributes or relationships that would require
+                more description to satisfy.<footnote xml:id="endnote-556" label="636"
+                    audience="Business">
+                    <para audience="Business" xml:id="para-u4v_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-556">
+                                    <primary>endnote</primary>
+                                    <secondary>Business</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-556">
+                                    <primary>business</primary>
+                                    <secondary>set design</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>For example, we have often used a home kitchen as a setting for
+                        organizing systems. Suppose the home kitchen is to be used as the set for a
+                        cooking show and the designers want to arrange cookbooks to make the
+                        background visually pleasing. The designers would like to search for
+                        cookbooks on the basis of size and spine color, but these descriptive
+                        elements would be of little value to other users.</para>
+                </footnote></para>
+            <para audience="CORE" xml:id="para-ftv_54r_lr">Second, even if it were possible to
+                implement some optimal degree of description in a particular organizing system, we
+                would still encounter problems when multiple organizing systems exist in the same
+                domain or in domains that intersect across context, device, or application
+                boundaries. Since organizing systems are designed and evolve to satisfy the specific
+                requirements of their particular context, companies will often describe the same
+                resources differently, which creates integration and interoperability problems when
+                companies need to exchange and combine information resources<phrase
+                    role="parenthetical"> (<xref xrefstyle="short" linkend="section-10.3.2"
+                    />)</phrase>.</para>
+        </section>
+        <!--              -->
+        <?need 3cm ?>
+        <section xml:id="section-11.4.3" label="11.4.3"><title>About Intentional Arrangement</title>
+            <info><itermset><indexterm zone="section-11.4.3">
+                    <primary>intentional arrangement</primary>
+                    <secondary>requirements</secondary>
+                </indexterm><indexterm zone="section-11.4.3">
+                    <primary>requirements</primary>
+                    <secondary>intentional arrangement</secondary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-sxv_54r_lr"><phrase role="principle statement"
+                    >Organizing principles depend on resource descriptions, so requirements for the
+                    former are always intertwined with those for the latter.</phrase> Specifying
+                requirements for the intentional arrangement of resources is analogous to specifying
+                why and how resource categories can be created<phrase role="parenthetical"> (<xref
+                        xrefstyle="short" linkend="section-7.3"/>)</phrase>. In turn, the creation
+                of resource categories often becomes a question about the number and kind of
+                resource properties that might be analyzed and exploited by organizing
+                principles.</para>
+            <para audience="CORE" role="principle" xml:id="para-dcw_54r_lr"><info><itermset>
+                <indexterm zone="para-dcw_54r_lr">
+                    <primary>location</primary>
+                    <secondary>collocation</secondary>
+                </indexterm><indexterm zone="para-dcw_54r_lr">
+                    <primary>categorization</primary>
+                    <secondary>continuum</secondary>
+                </indexterm><indexterm zone="para-dcw_54r_lr">
+                    <primary>principle</primary>
+                    <secondary>enumeration</secondary>
+                </indexterm><indexterm zone="para-dcw_54r_lr">
+                    <primary>principle</primary>
+                    <secondary>collocation</secondary>
+                </indexterm><indexterm zone="para-dcw_54r_lr">
+                    <primary>principle</primary>
+                    <secondary>intentional arrangement</secondary>
+                </indexterm></itermset>
+        </info>We noted that there is a continuum of category formation that ranges
+                from minimal use of resource properties to more rigorous use of multiple properties,
+                and finally to statistical or composite use of multiple properties, some of which
+                are induced or inferred rather than explicit. <phrase role="principle statement">The
+                    simplest principle for defining a category is by enumeration, just putting the
+                    resources into a set without any specification of any properties they might
+                    share. The enumerated resources might very well have common properties, but the
+                    principle of enumeration ignores them; the only property that matters for that
+                    principle is that the resources are in the same set. This corresponds to the
+                    simplest principle of intentional arrangement, that of <glossterm
+                        linkend="gloss_collocation">collocation</glossterm>, just putting the
+                    resources in the same location without any additional organization.</phrase>
+            </para>
+            <para audience="CORE" xml:id="para-qgw_54r_lr">Collocated resources often acquire some
+                additional arrangement as a result of their use; consider how the books, papers, or
+                other resources gathered for some writing project often end up in piles in your
+                office or on your desk close to your work area. <phrase role="principle statement"
+                    >For a small collection, the proximity-to-use organizing principle is the
+                    easiest way to satisfy a requirement to minimize the time to find frequently
+                    used resources.</phrase></para>
+            <para audience="CORE" xml:id="para-wkw_54r_lr">As we have often seen, the scope and
+                scale of the organizing system is a dominant design consideration and it applies to
+                principles of resource arrangement too. <phrase role="principle statement">The
+                        <glossterm linkend="gloss_collocation">collocation</glossterm> principle of
+                    arrangement is sufficient for small resource collections because it is not
+                    necessary to define the optimal organization if the time to find any particular
+                    resource is short even for an inefficient search method of scanning the entire
+                    collection.</phrase>
+                <phrase role="statement">Using the extrinsic property of frequency of use makes
+                    search slightly more efficient, but only in organizing systems where the user
+                    population is small or interacts with the resources in similar ways. Otherwise,
+                    arranging resources to facilitate their frequent access for some users would
+                    hinder other users who never use them.</phrase> Imagine if you shared your
+                office desk with someone who works all night on other writing projects and leaves
+                his frequently used resources in piles close to his work area—which becomes your
+                work area in the morning.</para>
+                 
+            <para audience="CORE" role="principle" xml:id="para-opw_54r_lr"><phrase
+                    role="principle statement">Larger resource collections usually require multiple
+                    organizing principles to manage the complexity that emerges when more users and
+                    more varied interactions must be supported. A valet parking lot might organize
+                    cars only by size to make optimal use of limited space when parking and fetching
+                    them, but when cars are organized for sale they would be organized by price,
+                    performance, seating capacity, manufacturer, and many other properties. It is
+                    essential to establish the priority of users and interactions because these
+                    requirements determine the order in which the principles are applied to arrange
+                    the resources. This ordering creates a logical resource hierarchy that affects
+                    the efficiency of interactions and the maintenance of the organizing system over
+                    time.</phrase></para>
+            <para audience="CORE" role="contrast" xml:id="para-xtw_54r_lr"><phrase role="statement"
+                    >Information resources are invariably challenging to arrange because their
+                    aboutness is not an easily perceived property and because of the open-ended
+                    purposes they can serve.</phrase> Information collections with broad scope most
+                often use a standard system of bibliographic classification<phrase
+                    role="parenthetical"> (<xref xrefstyle="short" linkend="section-8.3"
+                />)</phrase>. In contrast, special libraries have narrower collections that need to
+                support domain-specific interactions for a relatively small set of users, and as a
+                result they require more specialized organizational schemes.<footnote
+                    xml:id="endnote-557" label="637" audience="LIS">
+                    <para audience="LIS" xml:id="para-jyw_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-557">
+                                    <primary>endnote</primary>
+                                    <secondary>LIS</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>special libraries</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>law</primary>
+                                    <secondary>libraries</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>corporate libraries</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>research libraries</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>support libraries</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>medical libraries</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>military libraries</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>museum</primary>
+                                    <secondary>libraries</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>prison libraries</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>software libraries</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>media libraries</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-557">
+                                    <primary>library science</primary>
+                                    <secondary>special libraries</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>The category of special libraries includes law libraries, corporate
+                        libraries—both those that support the head office and the research
+                        organization—medical libraries, military libraries, museum libraries, prison
+                        libraries, and might even be stretched to include libraries of software
+                        components.</para>
+                </footnote>
+                <phrase role="principle statement">The principles for resource arrangement in large
+                    firms of every type are often required to conform with laws and regulations for
+                    accounting, taxes, human resources, data retention and non retention, access
+                    control, and other functions.</phrase>
+                <phrase role="parenthetical">(See <xref xrefstyle="short" linkend="section-3.5.4.1"
+                    />, <xref xrefstyle="short" linkend="section-8.1.5.4"/>)</phrase></para>
+        </section>
+        <!--              -->
+        <section xml:id="section-11.4.4" label="11.4.4"><title>Dealing with Conflicting Requirements</title>
+            <info><itermset><indexterm zone="section-11.4.4">
+                    <primary>requirements</primary>
+                    <secondary>conflicting</secondary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-adx_54r_lr"><phrase role="statement">Any individual,
+                    group, or enterprise can create an organizing system that meets their specific
+                    requirements, but once this organizing system involves two or more parties with
+                    different requirements, there is a potential for conflict.</phrase> Roommates or
+                spouses sometimes argue about how to organize items in the kitchen, in the
+                refrigerator, or in some other shared space. To a person who arranges spices
+                alphabetically and condiment jars by size, arranging them according to cuisine or
+                frequency of use makes no sense. Similarly, if you are the sole user of a Dropbox or
+                other cloud storage account, you can organize it any way you want. You can use any
+                number of folders that need only make sense to you, or you can leave everything
+                unorganized in a single folder. However, if you share the Dropbox account with
+                another person, they are likely to have different organizational needs or
+                preferences. Perhaps you tend to organize resources by file type, while they prefer
+                to organize resources by topic or project.</para>
+            <para audience="CORE" role="principle" xml:id="para-lhx_54r_lr"><phrase role="statement"
+                    >A small number of people can often agree on an organizing system that meets the
+                    needs of each participant through informal negotiations.</phrase> The potential
+                for conflict increases when more people are involved, and <quote>bottom-up</quote>
+                <foreignphrase>ad hoc</foreignphrase> negotiations to resolve every disagreement
+                between every pair of participants just are not feasible. In many domains conflicts
+                are avoided or suppressed because the parties have developed or agreed to conform to
+                    standards<phrase role="parenthetical"> (<xref xrefstyle="short"
+                        linkend="section-8.1.5"/>).</phrase> Nevertheless, conflicts in organizing
+                principles for large-scale organizing systems are often resolved by parties with the
+                legal authority or economic power to impose a solution on all the participants in a
+                    <quote>top-down</quote> manner.<footnote xml:id="endnote-558" label="638"
+                    audience="Business">
+                    <para audience="Business" xml:id="para-zlx_54r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-558">
+                                    <primary>endnote</primary>
+                                    <secondary>Business</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-558">
+                                    <primary>market power</primary>
+                                    <secondary>imposed standards</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-558">
+                                    <primary>business</primary>
+                                    <secondary>imposed standards</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>Some people call this the <quote>Wal-Mart approach</quote> to
+                        standardization. A firm with dominant market power does not need to
+                        negotiate standards because it can impose whatever standards it chooses on
+                        its partners as a condition of doing business with them. When there are
+                        conflicting requirements, different relationships within the set of
+                        participants trying to reach agreement, and different extents to which they
+                        are subject to the authority behind the desired agreement, it is not
+                        surprising that approaches <quote>that require perfect coordination and
+                            altruism are of no practical interest</quote> <citation
+                            xml:id="cite_Rosenthal2004-10.1" linkend="Rosenthal2004">(Rosenthal et
+                            al. 2004, p 47)</citation>.</para>
+                </footnote></para>
+        </section>
+        
+        <!-- ###################### SECTION ########################################### -->
+    </section>
+    <!--              -->
+    <?dbfo clear ?>
+    <?need 7.5cm ?>
+    
+    <section xml:id="section-11.5" label="11.5"><title>Designing and Implementing an Organizing System</title>
+        <info><itermset><indexterm zone="section-11.5">
+                <primary>organizing system</primary>
+                <secondary>designing and implementing</secondary>
+            </indexterm></itermset>
+        </info>
+        <para audience="CORE" role="principle" xml:id="para-umy_54r_lr"><phrase role="statement"
+                >Requirements define what must be done but NOT how to do it; that’s the role of the
+                design and implementation phases.</phrase> Being explicit about requirements and the
+            intended scope and scale of an organizing system before moving onto these phases in an
+            organizing system’s lifecycle avoids two problems. The first is taking a narrow and
+            short-term focus on the initial resources in a collection, which might not be
+            representative of the collection when it reaches its planned scope and scale. This can
+            result in overly customized and inflexible resource descriptions or arrangements that
+            cannot easily accommodate the future growth of the collection. <phrase
+                role="statement principle">A second problem, often a corollary of the first, is not
+                separating design principles from their implementation in some specific environment
+                or technology.</phrase></para>
+        <!--              -->
+        <section xml:id="section-11.5.1" label="11.5.1"><title>Choosing Scope- and Scale-Appropriate Technology</title>
+            <info><itermset><indexterm zone="section-11.5.1">
+                    <primary>organizing system</primary>
+                    <secondary>choosing technology</secondary>
+                    <tertiary>scope- and scale-appropriate</tertiary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-hry_54r_lr"><info><itermset>
+                <indexterm zone="para-hry_54r_lr">
+                    <primary>costs</primary>
+                    <secondary>implementation tradeoffs</secondary>
+                </indexterm></itermset>
+        </info><phrase role="statement">A simple organizing system to satisfy personal
+                    record keeping or some short-lived information management requirements can be
+                    implemented using folders and files on a personal computer or by using
+                        <quote>off the shelf</quote> generic software such as web forms,
+                    spreadsheets, databases, and wikis.</phrase> Other simple organizing systems run
+                as applications on smart phones. Some small amount of configuration, scripting,
+                structuring or programming might be involved, but in many cases this work can be
+                done in an <foreignphrase>ad hoc</foreignphrase> manner. The low initial cost to get
+                started with these kinds of applications must be weighed against the possible cost
+                of having to redo a lot of the work later because the resources and the resource
+                descriptions might not be easily exported to new ones.</para>
+            <para audience="CORE" role="contrast" xml:id="para-svy_54r_lr">More capable organizing
+                systems that enable the persistent storage and efficient retrieval of large amounts
+                of structured information resources generally require additional design and
+                implementation efforts. Flat word processing files and spreadsheets are not
+                adequate. Instead, <abbrev>XML</abbrev> document models and database schemas often
+                must be developed to ensure more control of and validation of the information
+                content and its descriptions. Software for version and configuration management,
+                security and access control, query and transformation, and for other functions and
+                services must also be developed to implement the organizing system.</para>
+            <para audience="CORE" role="principle" xml:id="para-c1z_54r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-c1z_54r_lr">
+                            <primary>constraints</primary>
+                            <secondary>business rules</secondary>
+                        </indexterm>
+                        <indexterm zone="para-c1z_54r_lr">
+                            <primary>requirements</primary>
+                            <secondary>traceability</secondary>
+                        </indexterm>
+                    </itermset>
+                </info><phrase role="principle statement">Technology for organizing systems will
+                    always evolve to enable new capabilities.</phrase> For example, cloud computing
+                and storage are radically changing the scale of organizing systems and the
+                accessibility of the information they contain. It might be possible to implement
+                these capabilities and services to an organizing system in an incremental fashion
+                with informal design and implementation methods. If information models, processing
+                logic, business rules and other constraints are encoded in the software without
+                explicit traceability to requirements and design decisions the organizing system
+                will be difficult to maintain if the context, scope or requirements change. This is
+                why we have repeatedly emphasized the importance of architectural thinking about
+                organizing systems, beginning in <xref linkend="section-1.6" xrefstyle="short"/>
+                where we proposed that organizing principles should ideally be expressed in a way
+                that did not assume how they would be implemented.<phrase role="parenthetical"> (See
+                    also <xref linkend="section-3.3.3.2" xrefstyle="short"/>, <xref
+                        linkend="section-8.1.3" xrefstyle="short"/>, and <xref linkend="section-9.1"
+                        xrefstyle="short"/>)</phrase></para>
+        </section>
+        <!--              -->
+        <section xml:id="section-11.5.2" label="11.5.2"><title>Architectural Thinking</title>
+            <info><itermset><indexterm zone="section-11.5.2">
+                    <primary>organizing system</primary>
+                    <secondary>architectural thinking</secondary>
+                </indexterm><indexterm zone="section-11.5.2">
+                    <primary>architectural thinking</primary>
+                </indexterm></itermset>
+        </info>
+            
+           
+            
+            <para audience="CORE" xml:id="para-r2z_54r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-r2z_54r_lr">
+                            <primary>abstraction</primary>
+                            <secondary>in design</secondary>
+                        </indexterm>
+                    </itermset>
+                </info><phrase role="statement">Much of the advice about designing and implementing
+                    an organizing system can be summarized as <quote>architectural thinking,</quote>
+                    introduced in <xref linkend="section-1.6" xrefstyle="short"/>. The overall
+                    purpose of architectural thinking is to separate design issues from
+                    implementation ones to make a system more robust and flexible. Architectural
+                    thinking leads to more modularity and abstraction in design, making it easier to
+                    change an implementation to satisfy new requirements or to take advantage of new
+                    technologies or procedures.</phrase> It is also important to think
+                architecturally about the design of the vocabularies and schemas for resource
+                description and of classification systems to leave room for expansion to accommodate
+                new resource types<phrase role="parenthetical"> (<xref xrefstyle="short"
+                        linkend="section-7.5"/> and <xref xrefstyle="short"
+                        linkend="section-8.2.2.3"/>)</phrase>. Doing so is easier if the
+                descriptions are logically and physically distinct from the resources they describe.
+                A checklist the brings together useful principles and processes for architectural
+                thinking from all parts of this book is in the nearby sidebar.</para>
+            <sidebar revision="4.0" revisionflag="added">
+                <?dbhtml sidebar-width="50%"?>
+                <?dbhtml float-type="right"?>
+                <?dbfo sidebar-width="50%" ?>
+                <?dbfo float-type="outside" ?>
+                <title>Principles and Processes for Architectural Thinking</title>
+                <itemizedlist>
+                    <listitem>
+                        <para xml:id="para-j5y_xny_pw">Explicitly define the purposes and users of
+                            the organizing system, recognizing that users might not agree on
+                            purposes or their priorities <phrase role="parenthetical">(<xref
+                                    linkend="section-2n.3" xrefstyle="short"/>)</phrase>.</para>
+                    </listitem>
+                    <listitem>
+                        <para xml:id="para-t14_zny_pw">Select resources
+                            <phrase role="parenthetical">(<xref linkend="section-3.2.1" xrefstyle="short"/>)</phrase> and design interactions
+                            <phrase role="parenthetical">(<xref linkend="section-3.4.2" xrefstyle="short"/>)</phrase> to support the primary or highest
+                            priority users.</para>
+                    </listitem>
+                    <listitem>
+                        <para xml:id="para-tnd_14y_pw">Specify information and interaction
+                            requirements in a conceptual and technology-neutral way
+                            <phrase role="parenthetical">(<xref linkend="section-1.6" xrefstyle="short"/>)</phrase> that conforms as much as possible to
+                            domain standards, schemas, or vocabularies
+                            <phrase role="parenthetical">(<xref linkend="section-8.1.5" xrefstyle="short"/>)</phrase>.</para>
+                    </listitem>
+                    <listitem>
+                        <para xml:id="para-lds_14y_pw"> Implement user interactions with design
+                            patterns to make them more discoverable, usable, and effective
+                            <phrase role="parenthetical">(<xref linkend="section-3.3.3.2" xrefstyle="short"/>)</phrase>.</para>
+                    </listitem>
+                    <listitem>
+                        <para xml:id="para-l2k_b4y_pw">Follow principles for good names <phrase
+                                role="parenthetical">(<xref linkend="section-4.4.3"
+                                    xrefstyle="short"/>)</phrase> and good resource descriptions
+                                <phrase role="parenthetical">(<xref linkend="section-5.3.4.1"
+                                    xrefstyle="short"/>)</phrase>.</para>
+                    </listitem>
+                    <listitem>
+                        <para xml:id="para-b3x_b4y_pw">Make an informed decision about the tradeoff
+                            between flexibility and complexity; a simpler system might be easier to
+                            adapt <phrase role="parenthetical">(<xref linkend="section-8.2.2.3" xrefstyle="short"/>)</phrase>.</para>
+                    </listitem>
+                    <listitem>
+                        <para xml:id="para-txj_c4y_pw">Make design and technology decisions
+                            consistent with the expected life of the organizing system
+                            <phrase role="parenthetical">(<xref linkend="section-11.6" xrefstyle="short"/>)</phrase>.</para>
+                    </listitem>
+                </itemizedlist>
+            </sidebar>
+            
+                
+            <sidebar xml:id="StopAndThink-11.5.2-WhatIsALibrary">
+                <?dbhtml sidebar-width="50%"?>
+                <?dbhtml float-type="left"?>
+                <?dbfo sidebar-width="50%" ?>
+                <?dbfo float-type="inside" ?>
+                <title>Stop and Think: What is a Library?</title>
+                <info>
+                    <itermset>
+                        <indexterm zone="StopAndThink-11.5.2-WhatIsALibrary" condition="print">
+                            <primary>Stop and Think</primary>
+                            <secondary>What is a Library?</secondary>
+                        </indexterm>
+                        <indexterm zone="StopAndThink-11.5.2-WhatIsALibrary" userlevel="Professional Graduate">
+                            <primary>What is a Library?</primary>
+                        </indexterm>
+                        <indexterm zone="StopAndThink-11.5.2-WhatIsALibrary">
+                            <primary>library</primary>
+                        </indexterm>
+                    </itermset>
+                </info>
+                <para xml:id="para-ejz_54r_lr">The word <quote>library</quote> has several meanings
+                    that differ in how much architectural thinking they embody. When you tell
+                    someone you will meet them at the library for a cup of coffee and a study
+                    session it is a specific physical place. At other times you might use a more
+                    abstract notion of a library as an organizing system with a predictable type of
+                    collection, resource arrangement, and supported interactions. Both meanings are
+                    important for a city creating a new library. How would you ensure that both are
+                    considered in an effective way? </para>
+            </sidebar>
+                
+            <para audience="CORE" role="contrast" xml:id="para-qnz_54r_lr">Nevertheless,
+                architectural thinking requires more careful analysis of resources and
+                implementation alternatives, and most people do not think this way, especially for
+                personal and informal organizing systems. You can imagine that someone might arrange
+                a collection of paperback books in a small bookcase whose shelf height and width
+                were perfectly suited for the paperbacks they currently own. However, this
+                organizing system would not work at all for large format books, and a paperback
+                could not be added to the collection unless one was purged from the collection. It
+                would be more sensible to start with a bigger bookcase with adjustable shelves so
+                that the organizing system would have a longer lifetime.</para>
+            <note userlevel="Editor">
+                <title>Editors' Note</title>
+                <para xml:id="para-o5p_rvg_hv">Section should be revisited in the light of "need to
+                    be ready to learn"</para>
+            </note>
+
+            <para audience="CORE" xml:id="para-isz_54r_lr">You might think that large institutional
+                organizing systems would avoid these problems caused by tying a collection too
+                tightly to the physical environment in which it is initially organized, but
+                sometimes they do not. A famous example involves the art collection of the Barnes
+                Foundation, which had to keep its paintings in the exact same crowded arrangements
+                when the museum made a controversial move from a small building to a larger one
+                because the donor had mandated that the paintings never be moved from their original
+                settings. (See the sidebar, <xref linkend="sidebar_Barnes_Collection"/>).</para>
+            <para audience="CORE" xml:id="para-vwz_54r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-vwz_54r_lr">
+                            <primary>big data</primary>
+                        </indexterm>
+                        <indexterm zone="para-vwz_54r_lr">
+                            <primary>constraints</primary>
+                            <secondary>physical</secondary>
+                        </indexterm>
+                    </itermset>
+                </info><phrase role="definition" xml:id="def_big_data">For digital resources,
+                    inexpensive storage and high bandwidth have largely eliminated capacity as a
+                    constraint for organizing systems, with an exception for <glossterm
+                        xml:id="term_big_data">big data</glossterm>, which is defined as a
+                    collection of data that is too big to be managed by typical database software
+                    and hardware architectures.</phrase><footnote xml:id="endnote-559" label="639"
+                    audience="Computing">
+                    <para audience="Computing" xml:id="para-fb1_v4r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-559">
+                                    <primary>endnote</primary>
+                                    <secondary>Computing</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-559">
+                                    <primary>big data</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-559">
+                                    <primary>computing</primary>
+                                    <secondary>big data</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>Note that this definition does not include any specific size
+                        threshold, such as some number of terabytes (thousands of gigabytes). This
+                        allows the threshold size that makes a collection a big data one to increase
+                        as storage technology advances. It also recognizes that different industries
+                        or domains have different thresholds <citation
+                            xml:id="cite_Manyika2011_11.2" linkend="Manyika2011">(Manyika et al
+                            2011)</citation>.</para>
+                </footnote> Even so, big data collections are often large but homogeneous, so their
+                scale is not their most important challenge from an organizing system
+                    perspective<phrase role="parenthetical"> (<xref xrefstyle="short"
+                        linkend="section-11.3.1"/>)</phrase>.</para>
+
+            <sidebar xml:id="sidebar_Barnes_Collection"><title>The Barnes Collection</title>
+                <info>
+                    <itermset>
+                        <indexterm zone="sidebar_Barnes_Collection" condition="print"
+                            userlevel="Professional Graduate">
+                            <primary>sidebar</primary>
+                            <secondary>Barnes Collection</secondary>
+                        </indexterm>
+                        <indexterm zone="sidebar_Barnes_Collection" userlevel="Professional Graduate">
+                            <primary>Barnes Collection</primary>
+                        </indexterm>
+                        <indexterm zone="sidebar_Barnes_Collection">
+                            <primary>museums</primary>
+                            <secondary>Barnes Collection</secondary>
+                        </indexterm>
+                    </itermset>
+                </info>
+                
+                <para audience="CORE" xml:id="para-pf1_v4r_lr"
+                            ><personname><firstname>Albert</firstname>
+                        <surname>Barnes</surname></personname> was a chemist who made a fortune
+                    inventing a preventive treatment for gonorrhea and who then amassed perhaps the
+                    greatest private art collection ever, one that contained over 800 paintings by
+                    artists like <personname><surname>Picasso</surname></personname>,
+                            <personname><surname>Renoir</surname></personname>,
+                            <personname><surname>Matisse</surname></personname>,
+                            <personname><surname>van Gogh</surname></personname>, and
+                            <personname><surname>Cezanne</surname></personname>. In
+                        <date>1922</date> Barnes built a museum for his collection in his
+                    residential neighborhood in Merion, PA, a suburb of Philadelphia. Barnes did not
+                    open his collection to the public and in his will mandated that the collection
+                    never be moved, loaned, or sold.</para>
+                <para audience="CORE" xml:id="para-ek1_v4r_lr"><info><itermset><indexterm zone="para-ek1_v4r_lr">
+                        <primary>location</primary>
+                        <secondary>constraint</secondary>
+                    </indexterm></itermset>
+        </info>In the decades after Barnes died in <date>1951</date> the Merion
+                    museum needed extensive repairs and security upgrades, and some people suggested
+                    that its remote location and access restrictions jeopardized its financial
+                    viability. However, a proposal to relocate the collection to Philadelphia
+                    seemingly violated the terms of the Barnes will.</para>
+                <para audience="CORE" xml:id="para-q41_v4r_lr">A legal fight dragged on for decades.
+                    Finally in <date>2004</date> a judge ruled that the collection could be moved to
+                    Philadelphia, but only if the new museum contained exact copies of the gallery
+                    rooms of the original museum and arranged the paintings exactly as they were in
+                    Merion. The new museum building, opened in <date>2012</date>, is ten times
+                    larger than the old one, but the collection takes up the same space as it did in
+                    Merion. The other 90% of the building is occupied by an auditorium, offices,
+                    classrooms, a gift shop, and other space that contains none of the
+                        collection.<footnote xml:id="endnote-560" label="640" audience="Museums">
+                        <para audience="Museums" xml:id="para-ss1_v4r_lr"><info>
+                                <itermset>
+                                    <indexterm audience="Markup" zone="endnote-560">
+                                        <primary>endnote</primary>
+                                        <secondary>Museums</secondary>
+                                    </indexterm>
+                                    <indexterm zone="endnote-560">
+                                        <primary>museums</primary>
+                                        <secondary>Barnes collection</secondary>
+                                    </indexterm>
+                                </itermset>
+                            </info>The history of the collection and the legal battle are described
+                            in <citation xml:id="cite_Anderson2003" linkend="Anderson2003">(Anderson
+                                2003)</citation>. A documentary film with a conspiracy perspective
+                            is <citation xml:id="cite_Argott2009" linkend="Argott2009">(Argott
+                                2009)</citation>. See also BarnesFoundation.org.</para>
+                    </footnote></para>
+            </sidebar>
+
+        </section>
+        <!--              -->
+        <section xml:id="section-11.5.3" label="11.5.3"><title>Distinguishing Access from Control</title>
+            <info><itermset><indexterm zone="section-11.5.3">
+                    <primary>resource</primary>
+                    <secondary>access vs control</secondary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-ex1_v4r_lr"><info><itermset>
+                <indexterm zone="para-ex1_v4r_lr">
+                    <primary>location</primary>
+                    <secondary>hidden</secondary>
+                </indexterm><indexterm zone="para-ex1_v4r_lr">
+                    <primary>abstraction</primary>
+                    <secondary>layer</secondary>
+                </indexterm><indexterm zone="para-ex1_v4r_lr">
+                    <primary>identity</primary>
+                    <secondary>obfuscated by services</secondary>
+                </indexterm></itermset>
+        </info>Because large resource collections are often used for multiple purposes
+                by many different people or projects, they illustrate another important
+                architectural issue for collections of digital resources. <phrase role="statement">A
+                    requirement for access to resources does not imply a need to directly own or
+                    control them, and information-intensive and web-based businesses have
+                    increasingly adopted organizing system designs that involve storage of digital
+                    resources in the cloud, licensing of globally distributed resources, and
+                    outsourcing of information services.</phrase> Designs that use these
+                architectural concepts can realize functional and quality improvements because the
+                location and identity of the service provider is hidden by an abstraction
+                    layer<phrase role="parenthetical"> (<xref xrefstyle="short"
+                        linkend="section-3.4.2.1"/>, <xref xrefstyle="short"
+                        linkend="section-4.4.3.5"/>)</phrase>. However, separating access from
+                ownership has been a cultural challenge for some libraries and museums whose
+                institutional identities emphasize the resources they directly control and the
+                physical buildings in which they control them.<footnote xml:id="endnote-561"
+                    label="641" audience="LIS">
+                    <para audience="LIS" xml:id="para-gcb_v4r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-561">
+                                    <primary>endnote</primary>
+                                    <secondary>LIS</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-561" userlevel="Professional">
+                                    <primary>library science</primary>
+                                    <secondary>citations</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>See <citation xml:id="cite_Sandler2006-11.1" linkend="Sandler2006"
+                            >(Sandler 2006)</citation>, <citation xml:id="cite_Freeman2005"
+                            linkend="Freeman2005">(Freeman et al. 2005)</citation>.</para>
+                </footnote></para>
+        </section>
+        <!--              -->
+        <section xml:id="section-11.5.4" label="11.5.4"><title>Standardization and Legacy Considerations</title>
+            <info><itermset><indexterm zone="section-11.5.4">
+                    <primary>organizing system</primary>
+                    <secondary>standardization and legacy</secondary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-sgb_v4r_lr">As we noted with the Barnes Collection, a
+                building becomes old and outdated over time. <phrase role="statement">The technology
+                    used in digital organizing systems becomes obsolete faster than physical
+                    buildings do.</phrase> The best way to slow the inevitable transformation of
+                today’s cutting edge technology to tomorrow’s legacy technology is to design with
+                standard data formats, description vocabularies and schemas, and classification
+                systems unless you have specific requirements that preclude these choices.</para>
+            <para audience="CORE" xml:id="para-alb_v4r_lr"><info><itermset>
+                <indexterm zone="para-alb_v4r_lr">
+                    <primary>API</primary>
+                </indexterm></itermset>
+        </info><phrase role="statement">Even a requirement to interoperate with an
+                    organizing system that uses proprietary or non-standard specifications can
+                    usually be satisfied by transforming from a standard format<phrase
+                        role="parenthetical"> (<xref xrefstyle="short" linkend="section-8.1.5.2"/>,
+                            <xref xrefstyle="short" linkend="section-10.4"/>).</phrase></phrase>
+                <phrase role="statement principle">Similarly, it is better to design the
+                        <abbrev>API</abbrev>s and data feeds of an organizing system in a generic or
+                    standard way that abstracts from their hidden implementation. This design
+                    principle makes it easier for external users to understand the supported
+                    interactions, and also prevents disclosure of any aspects of resource
+                    description or organization that provide competitive advantage.</phrase> For
+                example, the way in which a business classifies products, suppliers, customers, or
+                employees can be competitively important.</para>
+            <para audience="CORE" xml:id="para-opb_v4r_lr"><info><itermset>
+                <indexterm zone="para-opb_v4r_lr">
+                    <primary>costs</primary>
+                    <secondary>data conversion</secondary>
+                </indexterm></itermset>
+        </info><phrase role="interrogative">Two important design questions that arise
+                    with data transformation or conversion, whether it is required by a technology
+                    upgrade or an interoperability requirement, are when to do it and where to do
+                    it.</phrase> The job of converting all the resources in a collection can
+                typically be outsourced to a firm that specializes in format conversion or resource
+                description, and a batch or pre-emptive conversion of an entire collection enables
+                an upgraded or new organizing system to operate more efficiently when it is not
+                distracted by ongoing conversion activity. On the other hand, if resources vary
+                greatly in their frequency of use, a <quote>do-it-yourself on-demand</quote> method
+                is probably more cost effective as long as the conversion does not impact the
+                interactions that need to be supported.</para>
+        </section>
+        
+        <!-- ###################### SECTION ########################################### -->
+    </section>
+    <!--              -->
+    <section xml:id="section-11.6" label="11.6"><title>Operating and Maintaining an Organizing System</title>
+        <info><itermset><indexterm zone="section-11.6">
+                <primary>organizing system</primary>
+                <secondary>operating and maintaining</secondary>
+            </indexterm></itermset>
+        </info>
+        
+        
+        <para audience="CORE" xml:id="para-sqc_v4r_lr"><phrase role="statement">After the organizing
+                system has been designed and implemented it can be put into its operation and
+                maintenance phases.</phrase> We will look at these from two perspectives, first from
+            the point of view of individual resources, and then from the point of view of the
+            organizing system’s design and implementation. These two perspectives are not always
+            clearly distinguished. Curation, for example, is often used to describe actions taken to
+            maintain individual resources as well as those that result in new arrangements of
+            them.</para>
+        
+        <!--              -->
+        <section xml:id="section-11.6.1" label="11.6.1"><title>Resource Perspective</title>
+            <info><itermset><indexterm zone="section-11.6.1">
+                    <primary>organizing system</primary>
+                    <secondary>maintaining</secondary>
+                    <tertiary>resource perspective</tertiary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" xml:id="para-ivc_v4r_lr"><phrase role="statement">Sometimes an
+                    organizing system is implemented with its organizing structures and
+                    relationships waiting to be populated by resources as they are acquired and
+                    described.</phrase> The scope and scale of the organizing system shapes how the
+                descriptions are created and how the descriptions are then used to assign resources
+                to the logical or physical containers of the organizing system. The most important
+                decisions to be made at this point involve determining an appropriate mix of methods
+                for creating the resource descriptions, because their cost, quality, consistency,
+                completeness, and semantic richness depends on which human or computational agents
+                do the work<phrase role="parenthetical"> (<xref xrefstyle="short"
+                        linkend="section-5.3.6"/>)</phrase>.</para>
+            <para audience="CORE" xml:id="para-xzc_v4r_lr">For web-based and consumer-focused
+                organizing systems, it is tempting to rely on users to assign descriptions, tags, or
+                ratings to resources<phrase role="parenthetical"> (<xref linkend="section-5.2.2.3"
+                        xrefstyle="short"/>)</phrase>. Some of these systems attempt to improve the
+                quality and precision of these descriptions by providing forms, controlled
+                vocabularies, or suggestions. Finding a balance is tricky; too much direction and
+                control is demotivating to uncompensated volunteer describers, and too little of it
+                results in the proverbial <quote>tag soup.</quote></para>
+            <para audience="CORE" xml:id="para-i2d_v4r_lr">An essential operational and maintenance
+                activity is evaluation of resource descriptions, first with respect to the time and
+                process by which they are created, and second with respect to how and when they
+                support the designed interactions<phrase role="parenthetical"> (<xref
+                        linkend="section-5.3.7" xrefstyle="short"/>)</phrase>.</para>
+            <para audience="CORE" xml:id="para-fjd_v4r_lr"><phrase role="statement">Some organizing
+                    systems are initiated with a fixed set of resources that will not change in any
+                    way.</phrase> For example, in an archive as most narrowly defined, neither the
+                individual resources nor the organization of the collection as a whole will change.
+                If an archive of Abraham Lincoln letters is established, we know that Lincoln will
+                never revise any letters or write any new ones, and any new classifications or
+                descriptions devised by people studying the archive will not be used to rearrange
+                the letters.</para>
+            <para audience="CORE" xml:id="para-wnd_v4r_lr">Most organizing systems, however, need to
+                support ongoing interactions with a collection that changes over time as new
+                resources enter the collection and old ones leave. These selection and collection
+                management processes are explicit in libraries, museums and similar institutions
+                that maintain collections to satisfy the changing needs and preferences of their
+                user communities<phrase role="parenthetical"> (<xref linkend="section-3.2.2"
+                        xrefstyle="short"/>)</phrase>.</para>
+        </section>
+        <!--              -->
+        <section xml:id="section-11.6.2" label="11.6.2"><title>Properties, Principles and Technology Perspective</title>
+            <info><itermset><indexterm zone="section-11.6.2">
+                    <primary>organizing system</primary>
+                    <secondary>maintaining</secondary>
+                    <tertiary>technology perspective</tertiary>
+                </indexterm><indexterm zone="section-11.6.2">
+                    <primary>organizing system</primary>
+                    <secondary>maintaining</secondary>
+                    <tertiary>properties and principles</tertiary>
+                </indexterm></itermset>
+        </info>
+            
+            <para audience="CORE" role="principle" xml:id="para-lsd_v4r_lr"><phrase role="statement"
+                    >It is useful to consider how an organizing system as a whole is operated and
+                    maintained over time.</phrase> We can analyze how the system’s organizing
+                properties, principles and technology might change, and we can roughly order
+                different types of change according to their overall impact.</para>
+            <para audience="CORE" role="principle" xml:id="para-zwd_v4r_lr"><phrase role="statement"
+                    >The most predictable maintenance activities for an organizing system with an
+                    expected long lifetime <phrase role="parenthetical">(<xref xrefstyle="short"
+                            linkend="section-11.3.3"/>)</phrase> are incremental changes in
+                    description vocabularies and classification schemes<phrase role="parenthetical">
+                            (<xref linkend="section-8.2.2.3" xrefstyle="short"/>)</phrase>.</phrase>
+                These need to evolve when new instances or contexts require additional properties to
+                maintain the distinctions between types of resources, but the basic principles
+                embodied in the organizing systems are not affected.</para>
+            <para audience="CORE" xml:id="para-vb2_v4r_lr"><phrase role="statement">Incremental
+                    category maintenance takes place even in personal organizing systems where the
+                    categories are not always explicit.</phrase> The collection of clothes in a
+                college student’s closet and the categories and properties for arranging them will
+                change somewhat when he graduates and takes a job in a downtown office building
+                where he needs to dress more formally than he did as a student. He will learn that
+                despite the common term in the category name, <quote>student casual</quote> and
+                    <quote>business casual</quote> do not contain the same sets of resources.</para>
+            <para audience="CORE" xml:id="para-lg2_v4r_lr"><phrase role="statement">Category
+                    maintenance is an ongoing activity in institutional organizing systems.
+                </phrase>The most commonly used bibliographic classification systems all have
+                numbering and naming schemes that allow for subdivision and extension to create new
+                subcategories to accommodate resources about new fields of knowledge and
+                technology.</para>
+            <para audience="Computing" xml:id="para-bl2_v4r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-bl2_v4r_lr">
+                            <primary>ACM</primary>
+                            <secondary>keyword classification</secondary>
+                        </indexterm>
+                        <indexterm zone="para-bl2_v4r_lr">
+                            <primary>Moore’s Law</primary>
+                        </indexterm>
+                    </itermset>
+                </info>As another example, the <firstterm xml:id="first_ACM"><citerefentry
+                        xml:id="ref_ACM"><refentrytitle><orgname>Association for Computing
+                                Machinery</orgname></refentrytitle><manvolnum>ACM</manvolnum></citerefentry></firstterm>
+                professional society created a keyword classification in <date>1964</date> to
+                organize articles in its many publications, but relentless change in the computing
+                field driven by Moore’s Law has required the <abbrev>ACM</abbrev> to significantly
+                revise the system almost every decade.<footnote xml:id="endnote-562" label="642"
+                    audience="Computing">
+                    <para audience="Computing" xml:id="para-wp2_v4r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-562">
+                                    <primary>endnote</primary>
+                                    <secondary>Computing</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-562">
+                                    <primary>computing</primary>
+                                    <secondary>ACM</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>No classification scheme ever devised is as unstable as the
+                            <abbrev>ACM</abbrev>’s because new computing concepts, technologies, and
+                        application areas are constantly emerging. Even the society’s name seems
+                        outdated.</para>
+                </footnote></para>
+            <para audience="CORE Business" role="contrast principle" xml:id="para-n52_v4r_lr">In
+                contrast, changes in business organizing systems are more likely to be driven by
+                economic factors. Resource properties for managing collections of resource and the
+                information that describes them often change over time as a result of new products
+                and services, mergers and acquisitions, or refined customer segmentation. More
+                substantial changes in business organizing systems reflect the need to comply with
+                laws and regulations that impose new requirements for tracing money flows or
+                transactions. These mandated classifications and processes might require new
+                organizing principles, not just incremental properties<phrase role="parenthetical">
+                        (<xref linkend="section-8.1.5.4" xrefstyle="short"/>)</phrase>.</para>
+            <para audience="Computing" xml:id="para-fz2_v4r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-fz2_v4r_lr">
+                            <primary>BPEL</primary>
+                        </indexterm>
+                    </itermset>
+                </info>The choice of implementation technology influences how easy it is to handle
+                these types of changes in organizing systems. In databases this problem is known as
+                    <quote>schema migration.</quote> With XML implementations, schemas can be
+                designed with <quote>extension</quote> or <quote>codelist</quote> elements to enable
+                changes that will not invalidate existing information. Business processes that are
+                driven by <quote>executable specifications</quote> like the <firstterm
+                    xml:id="first_BPEL"><citerefentry xml:id="ref_BPEL"><refentrytitle>Business
+                            Process Execution
+                        Language</refentrytitle><manvolnum>BPEL</manvolnum></citerefentry></firstterm>
+                can be easily modified because the <abbrev>BPEL</abbrev>
+                <abbrev>XML</abbrev> instance is used to configure the software that carries out the
+                process it describes.<footnote xml:id="endnote-563" label="643" audience="Computing">
+                    <para audience="Computing" xml:id="para-udf_v4r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-563">
+                                    <primary>endnote</primary>
+                                    <secondary>Computing</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-563">
+                                    <primary>BPEL</primary>
+                                </indexterm>
+                                <indexterm zone="endnote-563">
+                                    <primary>computing</primary>
+                                    <secondary>BPEL</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>For a formal computer science treatment of BPEL see <citation
+                            xml:id="cite_Fu2004" linkend="Fu2004">(Fu, Bultan, and Su
+                            2004)</citation>; for a commercial perspective see <link
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="http://www.oracle.com/technetwork/middleware/bpel/overview/index.html"
+                                ><uri>http://www.oracle.com/technetwork/middleware/bpel/overview/index.html</uri></link>.</para>
+                </footnote></para>
+            <para audience="CORE" role="principle" xml:id="para-c3f_v4r_lr">Another very predictable
+                type of activity over time with organizing systems is a technology upgrade that
+                improves its quality or capabilities without affecting the organizing principles. A
+                student might replace his handwritten lecture notes with typed notes on a laptop or
+                tablet computer but not significantly change the way the notes are organized.</para>
+            <para audience="CORE" xml:id="para-umf_v4r_lr"><info>
+                    <itermset>
+                        <indexterm zone="para-umf_v4r_lr">
+                            <primary>costs</primary>
+                            <secondary>storage</secondary>
+                        </indexterm>
+                    </itermset>
+                </info><phrase role="statement">Institutional organizing systems are adopting tiered
+                    storage systems that automatically move resources between different types of
+                    storage media to meet performance, availability and recovery
+                    requirements.</phrase> For example, firms with high financial impact of downtime
+                like banks run critical organizing systems with copies in <quote>failsafe</quote> or
+                    <quote>hot</quote> modes that are synchronized with the production environments
+                to prevent any interruptions in information access if the latter are disrupted. On
+                the other hand, resources needed for regulatory compliance can be kept on lower cost
+                disk storage.</para>
+            <para audience="CORE" xml:id="para-nrf_v4r_lr"><phrase role="principle statement">The
+                    most challenging kinds of maintenance activities for organizing systems involve
+                    changes to the principles for arranging resources along with changes in the
+                    implementing technology.</phrase> An example is the ambitious effort to
+                introduce semantic web and linked data concepts in bibliographic organizing
+                    systems<phrase role="parenthetical"> (<xref xrefstyle="short"
+                        linkend="section-6.8.2"/>, <xref xrefstyle="short" linkend="section-9.4.3"
+                    />)</phrase>. And change comes faster to businesses than to libraries and
+                museums. <phrase role="statement">New technologies can have a disruptive impact on
+                    business organizing system, forcing major changes to enable strategy changes
+                    that involve faster finding, retrieval, or delivery of informational or physical
+                    goods.</phrase><footnote xml:id="endnote-564" label="644" audience="Computing">
+                    <para audience="Computing" xml:id="para-fwf_v4r_lr"><info>
+                            <itermset>
+                                <indexterm audience="Markup" zone="endnote-564">
+                                    <primary>endnote</primary>
+                                    <secondary>Computing</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-564" userlevel="Professional Graduate">
+                                    <primary>business applications</primary>
+                                    <secondary>managing qualitative change</secondary>
+                                </indexterm>
+                                <indexterm zone="endnote-564">
+                                    <primary>computing</primary>
+                                    <secondary>managing qualitative change</secondary>
+                                </indexterm>
+                            </itermset>
+                        </info>This means that the organizing systems used by business applications
+                        more often employ configuration management, version control, model-based
+                        code generation, and other computing techniques that robustly support the
+                        need for qualitative changes in the organizing systems.</para>
+                </footnote></para>
+            <para audience="CORE" xml:id="para-x1g_v4r_lr"><phrase role="statement principle"
+                    >Sometimes major changes to organizing principles and technologies can be
+                    introduced incrementally, with changes <quote>rolled out</quote> to different
+                    sets of resources or user groups during a transition period. However, sometimes
+                    the changes are inherently ”all or none” because it is impossible to have two
+                    conflicting organizing systems operating in the same context.</phrase> An easy
+                to understand example of an organizing system that changed radically is the system
+                governing which side of the road you drive on, which was changed in Samoa in
+                    <date>2009</date>.<phrase role="parenthetical"> (See the sidebar, <xref
+                        linkend="sidebar_Driving_Samoa"/>)</phrase>.</para>
+            
+            
+            <sidebar xml:id="sidebar_Driving_Samoa"><title>Driving in Samoa</title>
+                <info>
+                    <itermset>
+                        <indexterm zone="sidebar_Driving_Samoa" condition="print"
+                            userlevel="Professional Graduate">
+                            <primary>sidebar</primary>
+                            <secondary>Driving in Samoa</secondary>
+                        </indexterm>
+                        <indexterm zone="sidebar_Driving_Samoa" userlevel="Professional Graduate">
+                            <primary>Driving in Samoa</primary>
+                        </indexterm>
+                    </itermset>
+                </info>
+                
+                <para audience="CORE" xml:id="para-yjg_v4r_lr">Whether you travel by bus, car, or
+                    bicycle, you always keep to one side of the road. The convention of driving on
+                    either the right side or the left side is a legal standard that everyone takes
+                    for granted. However, you must follow it to ensure safe driving and avoid
+                    collisions and crashes.</para>
+                <para audience="CORE" xml:id="para-j4g_v4r_lr">This standard of which side of the
+                    road you drive on was not decided arbitrarily, but rather, it was adopted as a
+                    result of history, convention, and the need for organization. If you were the
+                    only person to use the road, you could choose to travel on any side you wanted,
+                    even travel right down the middle. As soon as more than one person needs to use
+                    the same road, the risk of collisions compels the creation of a coordinating
+                    standard.</para>
+                <para audience="CORE" xml:id="para-atg_v4r_lr">In <date>2009</date>, the government
+                    of Samoa took the rare step of changing the side of the road standard from
+                    driving on the right to driving on the left. The original standard reflected the
+                    influence of German colonization in the early <date>1900s</date>. However, Samoa
+                    is both geographically close to and economically intertwined with Australia and
+                    New Zealand, former British colonies that follow the British convention of
+                    driving on the left side. This proximity gives Samoa access to a nearby source
+                    of used cars that would be attractive to Samoa’s relatively poor population. So,
+                    the Samoan government decided to use its authority to change the driving
+                    standard so that more of its people could afford to buy cars.</para>
+                <para audience="CORE" xml:id="para-kzg_v4r_lr">As one could imagine, this decision
+                    was not implemented without controversy and opposition. While the decision
+                    benefited people currently without cars, it negatively affected those who
+                    already owned them. After a switch like this, what happens to the current market
+                    value of the thousands of cars designed to drive on the right? Opponents also
+                    claimed that the switch would cause unprecedented safety hazards. If even a
+                    small fraction of drivers were not able to immediately get the hang of driving
+                    on the other side, the accident rate could increase tremendously. Imagine the
+                    current pool of buses designed with doors that open on the right hand
+                        side<symbol>&#8212;</symbol>would they now let passengers out in the middle
+                    of the street? Who would pay to have the buses modified to put doors on the left
+                    hand side?<footnote xml:id="endnote-565" label="645" audience="Business">
+                        <para audience="Business" xml:id="para-q2h_v4r_lr"><info>
+                                <itermset>
+                                    <indexterm audience="Markup" zone="endnote-565">
+                                        <primary>endnote</primary>
+                                        <secondary>Business</secondary>
+                                    </indexterm>
+                                    <indexterm zone="endnote-565">
+                                        <primary>business</primary>
+                                        <secondary>Barta</secondary>
+                                    </indexterm>
+                                </itermset>
+                            </info><citation xml:id="cite_Barta2009" linkend="Barta2009">(Barta
+                                2009)</citation>.</para>
+                    </footnote></para>
+            </sidebar>
+        </section>
+        
+        <!-- ###################### SECTION ########################################### -->
+    </section>
+
+
+
+
+    <!--              -->
+    <?dbfo clear ?>
+    <section xml:id="section-11.7" label="11.7"><title>Key Points in Chapter Eleven</title>
+        
+        <qandaset role="quiz">
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What three initial
+                        characteristics of an organizing system influence most of the decisions
+                        about that organizing system?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">Most of the specific decisions that must be made for an
+                        organizing system are shaped by the initial decisions about its domain,
+                        scope, and scale.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.2"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What is the
+                        effect of broad scope in an organizing system?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">The impact of broad scope arises
+                        more from the heterogeneity of the resources and users in a collection
+                        rather than from their absolute number.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.3.1"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What is a
+                        practical effect of increasing collection size?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">Larger collections need more
+                        people to organize and maintain them, creating communication and
+                        coordination problems that grow much faster than the collection.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.3.1"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">How do you
+                        avoid problems of scope and scale?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">Standardization is the best way to prevent problems of
+                        scope and scale.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.3.1"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What is an
+                        effect of a heterogeneous user community?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">Organizing systems in the same
+                        domain and with nominally the same scope can differ substantially in the
+                        resources they contain and the interactions they support if they have
+                        different categories of users.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.3.2"/>)</para>
+                </answer>
+            </qandaentry>
+            
+            <!-- NEW KEY POINT -->
+            <qandaentry audience="CORE" revision="3.0" revisionflag="added">
+                <question>
+                    <para audience="CORE" role="interrogative">How can designers mitigate possible negative consequences of the system and technology they design?
+                    </para>
+                </question>
+                <answer><para>Designers who recognize that their systems have real consequences for people should commit to measures of transparency and an ongoing process of negotiation that enables those affected to voice concerns related to any detrimental effects the technology might have on them and their communities. 
+                </para>
+                    <para audience="CORE" role="parenthetical">(See <xref linkend="section-11.3.2"
+                        />)</para></answer>
+            </qandaentry>
+            
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What is the
+                        single biggest factor affecting the implementation of interactions?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">For most organizing systems other
+                        than personal ones, the set of interactions that are implemented in an
+                        organizing system is strongly determined by economic factors.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.4.1"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What is the
+                        most essential requirement of interactions?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">An essential requirement in every
+                        organizing system is ensuring that the supported interactions can be
+                        discovered and invoked by their intended users.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.4.1"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What is the
+                        role of computational agents in the creation and consumption of resource
+                        descriptions?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">Automated and computerized
+                        processes can create the resource descriptions in an organizing system and
+                        their use is primarily driven by scale.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.4.2"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What is the
+                        relationship between organizing principles and resource descriptions?</para>
+                </question>
+                <answer>
+                    <para audience="CORE" role="principle">Organizing
+                        principles depend on resource descriptions, so requirements for the former
+                        are always intertwined with those for the latter.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.4.3"/>)</para>
+                </answer>
+            </qandaentry>
+
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What
+                        characteristics of resource descriptions impede growth?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">Overly customized and inflexible
+                        resource descriptions or arrangements cannot easily accommodate the future
+                        growth of the collection.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.5"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What are the
+                        advantages of architectural thinking?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">Architectural thinking leads to
+                        more modularity and abstraction in design, making it easier to change an
+                        implementation to satisfy new requirements or to take advantage of new
+                        technologies or procedures.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.5.2"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What is big
+                        data?</para>
+                </question>
+                <answer>
+                    <para audience="CORE"><xref linkend="def_big_data"
+                            role="transclusion" endterm="def_big_data"/></para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.5.2"/>)</para>
+                </answer>
+            </qandaentry>
+
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What are the
+                        most predictable maintenance activities?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">The most predictable maintenance
+                        activities for an organizing system with an expected long lifetime are
+                        incremental changes in description vocabularies and classification
+                        schemes.</para>
+                    <para audience="CORE" role="principle">Another very
+                        predictable type of activity over time with organizing systems is a
+                        technology upgrade that improves its quality or capabilities without
+                        affecting the organizing principles.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.6.2"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What changes
+                        in organizing systems make maintenance especially difficult?</para>
+                </question>
+                <answer>
+                    <para audience="CORE" role="principle">The most
+                        challenging kinds of maintenance activities for organizing systems involve
+                        changes to the principles for arranging resources along with changes in the
+                        implementing technology.</para>
+                    <para audience="CORE" role="parenthetical">(See <xref
+                            linkend="section-11.6.2"/>)</para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para audience="CORE" role="interrogative">What six
+                        questions should be asked when approaching any organizing system?</para>
+                </question>
+                <answer>
+                    <para audience="CORE">What resources are being
+                        organized? Why are the resources being organized? Who does the organizing?
+                        When are the resources organized? Where are the resources organized? How
+                        much are the resources organized? </para>
+                    <para audience="CORE" role="parenthetical">(See the
+                        case studies presented in <xref linkend="chapter-12"/>)</para>
+                </answer>
+            </qandaentry>
+        </qandaset>
+        
+        <!-- ###################### CHAPTER ########################################### -->
+    </section>
+</chapter>
